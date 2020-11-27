@@ -1,0 +1,55 @@
+::-webkit-input-placeholder { /* Edge */
+  color: silver;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: silver;
+}
+
+::placeholder {
+  color: silver;
+  font-size: 25px;
+}
+
+body {
+  background-image: url(img/main.jpeg);;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+html {
+  height: 100%
+}
+input, textarea {
+  background-color: black;
+}
+.content {
+  /* The image used 
+  background-image: url(img/main.jpeg);
+
+
+  /* Full height 
+  height: 0 auto; 
+  
+  /* Center and scale the image nicely 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+}
+.button {
+  background-color: black;
+  color: white;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 10px;
+  height: 50px;
+
+}
+.dif
+{
+  width: 100%; 
+  text-align: center;
+  margin-top: 575px; 
+}
