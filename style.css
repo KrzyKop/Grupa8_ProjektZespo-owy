@@ -21,6 +21,7 @@ html {
 }
 input, textarea {
   background-color: black;
+  color: white;
 }
 .content {
   /* The image used 
