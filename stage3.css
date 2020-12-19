@@ -1,0 +1,52 @@
+::-webkit-input-placeholder { /* Edge */
+    color:silver;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color:silver;
+  }
+
+  ::placeholder {
+    color: silver;
+    font-size: 10px;
+  }
+  
+  body {
+    background-image: url(img/laptop1.jpg);;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  html {
+    height: 100%
+  }
+  input, textarea {
+    background-color: silver;
+  }
+  #button3_next {
+    background-color:silver;
+    color: black;
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+    margin-left: 2px;
+
+    border: 2px solid #000000;
+    box-sizing: border-box;
+
+  }
+.div
+{
+
+/* Rectangle 8 */
+
+position: absolute;
+width: 180px;
+height: 21px;
+left: 695px;
+top: 225px;
+
+
+
+}

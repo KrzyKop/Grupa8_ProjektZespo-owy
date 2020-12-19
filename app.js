@@ -1,6 +1,8 @@
 var mainpage="main.html"
 var stage2 = "stage2.html"
-
+var stage3 = "stage3.html"
+var stage4 = "stage4.html"
+var stage5 = "stage5.html" 
 var stage4_end="radio.html"//brak
 var stage5_driving="choose_road"; // brak 
 var contact_defuse_team="defuse.html" // brak
@@ -55,6 +57,17 @@ function setplayer() // niedkonczone
 {
 	document.location.href = stageBomb;
 }
+
+	function stage3_next() //stage3
+{
+	document.location.href = stage4;
+}
+
+	function stage4_next() //stage3
+{
+	document.location.href = stage5;
+}
+
 function  failed(){ document.location.href= stage_end_fail }
 function  positive(){  document.location.href = stage_end_pos; }
 
