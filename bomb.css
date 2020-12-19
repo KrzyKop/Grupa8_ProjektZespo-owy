@@ -1,0 +1,25 @@
+::-webkit-input-placeholder { /* Edge */
+  color: silver;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: silver;
+}
+
+::placeholder {
+  color: silver;
+  font-size: 25px;
+}
+
+body {
+  background-image: url(img/bomba.jpeg);;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+html {
+  height: 100%
+}
+input, textarea {
+  background-color: black;
+  color: white;
+}

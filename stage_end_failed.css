@@ -40,8 +40,44 @@ font-size: 144px;
 line-height: 144px;
 
 color: #000000;
+}
+#notthistime
+{
+position: absolute;
+width: 423px;
+height: 68px;
+left: 960px;
+top: 634px;
 
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 48px;
 
+color: #000000;
+}
+#wantagain
+{
+position: absolute;
+width: 356px;
+height: 116px;
+left: 809px;
+top: 900px;
+background: #000000;
+position: absolute;
+width: 296px;
+height: 48px;
+left: 839px;
+top: 934px;
+text-align: center;
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 48px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
 
 }
-
