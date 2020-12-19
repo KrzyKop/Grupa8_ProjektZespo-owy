@@ -31,7 +31,7 @@ position: absolute;
 width: 668px;
 height: 147px;
 left: 596px;
-top: 487px;
+top: 387px;
 
 font-family: Special Elite;
 font-style: normal;
@@ -59,17 +59,13 @@ color: #000000;
 }
 #wantagain
 {
-position: absolute;
-width: 356px;
-height: 116px;
-left: 809px;
-top: 900px;
+  padding: 0px;
+top: 800px;
 background: #000000;
 position: absolute;
 width: 296px;
 height: 48px;
 left: 839px;
-top: 934px;
 text-align: center;
 font-family: Special Elite;
 font-style: normal;
