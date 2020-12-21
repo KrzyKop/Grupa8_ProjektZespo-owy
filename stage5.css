@@ -22,6 +22,35 @@
   input, textarea {
     background-color: black;
   }
+
+#button_next
+{
+  /* Rectangle 3 */
+background-color:black;
+color: whitesmoke;
+position: absolute;
+width: 250px;
+height: 70px;
+left: 700px;
+top: 640px;
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 70px;
+line-height: 72px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+
+
+}
+
   .rectangle
   {
       /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. */
@@ -46,9 +75,9 @@ transform: rotate(-0.67deg);
 
   }
 
-  .rectangle_2
+  #rectangle2
   {
-    /* Instrukcja BHP */
+/* Instrukcja BHP */
 
 position: absolute;
 width: 114px;
@@ -63,4 +92,28 @@ font-size: 14px;
 line-height: 14px;
 
 color: #000000;
+
+
+  }
+
+  #rectangle3
+  {
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet */
+
+position: absolute;
+width: 258.89px;
+height: 353.11px;
+left: 1314px;
+top: 360.05px;
+
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 10px;
+
+color: #000000;
+
+transform: rotate(-0.67deg);
+
   }

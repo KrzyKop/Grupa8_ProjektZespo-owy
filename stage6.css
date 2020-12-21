@@ -1,0 +1,37 @@
+::-webkit-input-placeholder { /* Edge */
+    color: silver;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: silver;
+  }
+  
+  ::placeholder {
+    color: silver;
+    font-size: 25px;
+  }
+  
+  body {
+    background-image: url(img/interkom\ szkic2.jpg);;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  html {
+    height: 100%
+  }
+  input, textarea {
+    background-color: black;
+  }
+
+
+  .div
+  {
+      /* Rectangle 2 */
+
+position: absolute;
+width: 650px;
+height: 50px;
+left: 410px;
+top: 435px;
+
+  }

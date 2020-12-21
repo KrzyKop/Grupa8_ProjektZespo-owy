@@ -3,6 +3,7 @@ var stage2 = "stage2.html"
 var stage3 = "stage3.html"
 var stage4 = "stage4.html"
 var stage5 = "stage5.html" 
+var stage6 = "stage6.html"
 var stage4_end="radio.html"//brak
 var train="train.html" /// zagadka5 +wybor
 
@@ -55,25 +56,28 @@ function setplayer()
 {
 	document.location.href = stage3;
 }
-<<<<<<< HEAD
 
 	function stage3_next() //stage3
 {
 	document.location.href = stage4;
 }
 
-	function stage4_next() //stage3
+	function stage4_next() //stage4
 {
 	document.location.href = stage5;
 }
-=======
+
+	function stage5_next() //stage5
+{
+	document.location.href = stage6;
+}
+
 function searching_bomb()
 {
 	document.location.href =searching ;
 }
 
 
->>>>>>> 673a085cff6969d910f263f56f7cebd20a16fa15
 
 function  failed(){ document.location.href= stage_end_fail }
 function  positive(){  document.location.href = stage_end_pos; }
@@ -94,7 +98,7 @@ function move_stage_train()
   btn.addEventListener("click", searching_bomb);	
 }
 
-function move_stage_transition()
+/*function move_stage_transition()
 {
   newDiv = document.createElement("div");
   newDiv.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. <br> Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń "
@@ -108,7 +112,7 @@ function move_stage_transition()
   
   //btn.onclick.add = searching_bomb();
   btn.addEventListener("click", searching_bomb);	
-}
+}*/
 
 /* Mechanizm liczenia bledow */
 function addcounter()

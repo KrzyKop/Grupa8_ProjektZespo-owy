@@ -1,13 +1,13 @@
 ::-webkit-input-placeholder { /* Edge */
-    color:black;
+    color:silver;
   }
   
   :-ms-input-placeholder { /* Internet Explorer */
-    color:black;
+    color:silver;
   }
 
   ::placeholder {
-    color:black;
+    color:silver;
     font-size: 10px;
   }
 
@@ -22,35 +22,53 @@
   input, textarea {
     background-color: black;
   }
-  .button {
-    background-color:black;
-    color: whitesmoke;
-    width: 10px;
-    height: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 10px;
-    margin-left: 2px;
 
-    border: 2px solid #000000;
-    box-sizing: border-box;
+.rectangle
+{
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń */
 
-  }
+position: absolute;
+width: 80%;
+height: 55%;
+left: 15%;
+top: 33%;
+
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 48px;
+
+color: #000000;
+
+
+}
+
+#button_next {
+  background-color:black;
+  color: whitesmoke;
+  width: 70px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 5px;
+
+  background: rgba(0, 0, 0, 0.7);
+
+}
+
+
 .div
 {
 
 /* Rectangle 1 */
 
 position: absolute;
-width: 512px;
-height: 20px;
-left: 550px;
-top: 600px;
-
-/*background: rgba(0, 0, 0, 0.7);*/
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
+width: 680px;
+height: 50px;
+left: 421px;
+top: 620px;
 
 
 }
