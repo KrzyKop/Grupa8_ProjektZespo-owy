@@ -4,9 +4,7 @@ var stage3 = "stage3.html"
 var stage4 = "stage4.html"
 var stage5 = "stage5.html" 
 var stage4_end="radio.html"//brak
-var stage5_driving="choose_road"; // brak 
-var contact_defuse_team="defuse.html" // brak
-var searching_bomb="searching.html" //brak
+var train="train.html" /// zagadka5 +wybor
 
 var stageBomb= "bomb.html"
 var stage_end_fail = "stage_end_failed.html"
@@ -17,7 +15,7 @@ var counter =0;
 var player=null;
 	
 
-function setplayer() // niedkonczone
+function setplayer() 
 {
 	var decision=false;
 	tmp=document.getElementById('main_id').value
@@ -55,8 +53,9 @@ function setplayer() // niedkonczone
 	
     function stage2_next() //stage2
 {
-	document.location.href = stageBomb;
+	document.location.href = stage3;
 }
+<<<<<<< HEAD
 
 	function stage3_next() //stage3
 {
@@ -67,9 +66,49 @@ function setplayer() // niedkonczone
 {
 	document.location.href = stage5;
 }
+=======
+function searching_bomb()
+{
+	document.location.href =searching ;
+}
+
+
+>>>>>>> 673a085cff6969d910f263f56f7cebd20a16fa15
 
 function  failed(){ document.location.href= stage_end_fail }
 function  positive(){  document.location.href = stage_end_pos; }
+
+function move_stage_train()
+{
+  newDiv = document.createElement("div");
+  newDiv.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. <br> Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń "
+  newDiv.classList.add("mystyle");
+  my_div = document.getElementById("org_div1");
+  document.body.insertBefore(newDiv, my_div);
+  var btn = document.createElement("button");
+  btn.innerHTML = "Dalej!";
+  document.body.appendChild(btn);
+  btn.classList.add("buttonnext");
+  
+  //btn.onclick.add = searching_bomb();
+  btn.addEventListener("click", searching_bomb);	
+}
+
+function move_stage_transition()
+{
+  newDiv = document.createElement("div");
+  newDiv.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. <br> Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń "
+  newDiv.classList.add("rectanglestyle");
+  my_div = document.getElementById("org_div1");
+  document.body.insertBefore(newDiv, my_div);
+  var btn = document.createElement("button");
+  btn.innerHTML = "Dalej!";
+  document.body.appendChild(btn);
+  btn.classList.add("buttonnext");
+  
+  //btn.onclick.add = searching_bomb();
+  btn.addEventListener("click", searching_bomb);	
+}
 
 /* Mechanizm liczenia bledow */
 function addcounter()

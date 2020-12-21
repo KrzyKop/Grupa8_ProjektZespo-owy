@@ -27,10 +27,10 @@
       /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. */
 
 position: absolute;
-width: 303.98px;
+width: 275px;
 height: 148.94px;
-left: 446px;
-top: 249.58px;
+left: 22%;
+top: 20%;
 
 font-family: Special Elite;
 font-style: normal;
@@ -43,4 +43,24 @@ color: #000000;
 
 transform: rotate(-0.67deg);
 
+
+  }
+
+  .rectangle_2
+  {
+    /* Instrukcja BHP */
+
+position: absolute;
+width: 114px;
+height: 16px;
+left: 1389px;
+top: 322px;
+
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 14px;
+
+color: #000000;
   }
