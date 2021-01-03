@@ -6,6 +6,7 @@ var stage5 = "stage5.html"
 var stage6 = "stage6.html"
 var stage4_end="radio.html"//brak
 var train="train.html" /// zagadka5 +wybor
+var schemat="schemat.html" //zagadka6_schemat
 
 var stageBomb= "bomb.html"
 var stage_end_fail = "stage_end_failed.html"
@@ -74,8 +75,13 @@ function setplayer()
 
 function searching_bomb()
 {
-	document.location.href =searching ;
+	document.location.href =schemat ;
 }
+function stage6_next()
+{
+	document.location.href =stageBomb ;
+}
+
 
 
 
@@ -95,7 +101,7 @@ function move_stage_train()
   btn.classList.add("buttonnext");
   
   //btn.onclick.add = searching_bomb();
-  btn.addEventListener("click", searching_bomb);	
+  btn.addEventListener("click", stage5_next);	
 }
 
 /*function move_stage_transition()
