@@ -1,0 +1,85 @@
+::-webkit-input-placeholder { /* Edge */
+  color: silver;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: silver;
+}
+
+::placeholder {
+  color: silver;
+  font-size: 25px;
+}
+
+body {
+  background-image: url(img/driving_train.jpeg);;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+html {
+  height: 100%
+}
+.mystyle
+{
+position: absolute;
+width: 1712px;
+height: 661px;
+left: 104px;
+top: 118px;
+
+background: rgba(255, 255, 255, 0.5);
+
+position: absolute;
+width: 1625px;
+height: 379px;
+left: 191px;
+top: 179px;
+
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 48px;
+
+color: #000000;
+
+}
+
+.buttonnext
+{ 
+  /* Rectangle 3 */
+
+position: absolute;
+width: 301px;
+height: 116px;
+left: 809px;
+top: 900px;
+
+background: #000000;
+
+
+/* DALEJ */
+
+position: absolute;
+width: 301px;
+height: 72px;
+left: 809px;
+top: 933px;
+
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 72px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+}
+
+
+

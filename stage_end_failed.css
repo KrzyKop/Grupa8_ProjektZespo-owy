@@ -1,0 +1,79 @@
+::-webkit-input-placeholder { /* Edge */
+  color: silver;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: silver;
+}
+
+::placeholder {
+  color: silver;
+  font-size: 25px;
+}
+
+body {
+  background-image: url(img/ogien.jpeg);;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+html {
+  height: 100%
+}
+input, textarea {
+  background-color: black;
+}
+#failed
+{
+
+/* PORAŻKA */
+
+position: absolute;
+width: 668px;
+height: 147px;
+left: 596px;
+top: 387px;
+
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 144px;
+line-height: 144px;
+
+color: #000000;
+}
+#notthistime
+{
+position: absolute;
+width: 423px;
+height: 68px;
+left: 960px;
+top: 634px;
+
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 48px;
+
+color: #000000;
+}
+#wantagain
+{
+  padding: 0px;
+top: 800px;
+background: #000000;
+position: absolute;
+width: 296px;
+height: 48px;
+left: 839px;
+text-align: center;
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 48px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+
+}

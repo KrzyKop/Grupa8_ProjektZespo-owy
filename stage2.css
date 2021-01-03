@@ -1,0 +1,73 @@
+::-webkit-input-placeholder { /* Edge */
+  color: silver;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: silver;
+}
+
+::placeholder {
+  color: silver;
+  font-size: 25px;
+}
+
+body {
+  background-image: url(img/stage2.jpeg);;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+html {
+  height: 100%
+}
+input, textarea {
+  background-color: black;
+}
+.rectangle
+{
+/* Rectangle 6 */
+
+position: absolute;
+width: 1820px;
+height: 430px;
+left: calc(50% - 1820px/2);
+top: 53px;
+
+background: rgba(255, 255, 255, 0.5);
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń */
+
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 48px;
+
+color: #000000;
+
+
+}
+
+
+#button_next{
+  /* DALEJ */
+
+position: absolute;
+width: 301px;
+height: 72px;
+left: 809px;
+top: 803px;
+
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 72px;
+line-height: 72px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+background-color: #000000;
+color: #FFFFFF;
+
+
+}
+

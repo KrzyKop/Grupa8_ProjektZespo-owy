@@ -21,22 +21,8 @@ html {
 }
 input, textarea {
   background-color: black;
-  color:silver;
 }
-.content {
-  /* The image used 
-  background-image: url(img/main.jpeg);
 
-
-  /* Full height 
-  height: 0 auto; 
-  
-  /* Center and scale the image nicely 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  */
-}
 .button {
   background-color: black;
   color: white;
@@ -53,3 +39,16 @@ input, textarea {
   text-align: center;
   margin-top: 575px; 
 }
+/* STEP 2*/
+.stage2_rectangle
+{
+position: absolute;
+width: 1820px;
+height: 430px;
+left: calc(50% - 1820px/2);
+top: 53px;
+
+background: rgba(255, 255, 255, 0.5);
+}
+
+
