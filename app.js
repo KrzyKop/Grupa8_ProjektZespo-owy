@@ -4,11 +4,15 @@ var stage3 = "stage3.html"
 var stage4 = "stage4.html"
 var stage5 = "stage5.html" 
 var stage6 = "stage6.html"
-var stage4_end="radio.html"//brak
-var train="train.html" /// zagadka5 +wybor
-var schemat="schemat.html" //zagadka6_schemat
+var stage7 = "stage7.html" //brak
+var stage8 = "stage8.html" // train + przejscie
+var stage9 = "stage9.html" // schemat
+var stage10 = "stage10.html" //bomba
 
-var stageBomb= "bomb.html"
+
+
+
+
 var stage_end_fail = "stage_end_failed.html"
 var stage_end_pos_b = "stage_positive_a.html"; ///brak
 var stage_end_pos_b = "stage_positive_b.html"; ///brak
@@ -72,23 +76,19 @@ function setplayer()
 {
 	document.location.href = stage6;
 }
-
-function searching_bomb()
+function stage6_next() //stage6
 {
-	document.location.href =schemat ;
+	document.location.href = stage7;
 }
-function stage6_next()
+function stage7_next() //stage7
 {
-	document.location.href =stageBomb ;
+	document.location.href = stage8;
 }
-
-
-
-
-function  failed(){ document.location.href= stage_end_fail }
-function  positive(){  document.location.href = stage_end_pos; }
-
-function move_stage_train()
+function stage8_next() //stage8
+{
+	document.location.href = stage9;
+}
+function move_stage_train() //stage8a
 {
   newDiv = document.createElement("div");
   newDiv.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. <br> Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń "
@@ -98,11 +98,28 @@ function move_stage_train()
   var btn = document.createElement("button");
   btn.innerHTML = "Dalej!";
   document.body.appendChild(btn);
-  btn.classList.add("buttonnext");
-  
-  //btn.onclick.add = searching_bomb();
-  btn.addEventListener("click", stage5_next);	
+  btn.classList.add("buttonnext"); 
+  btn.addEventListener("click", stage8_next);	
 }
+function stage9_next() //stage9
+{
+	document.location.href = stage10;
+}
+function stage10_next() //stage10
+{
+	document.location.href = stage10;
+}
+
+
+
+
+
+
+
+function  failed(){ document.location.href= stage_end_fail }
+function  positive(){  document.location.href = stage_end_pos; }
+
+
 
 /*function move_stage_transition()
 {
@@ -136,8 +153,7 @@ function addcounter()
 			failed()
 		}
 	}
-// Wrap every letter in a span
-
+ //kk
   $('.ml1 .letters').each(function(){
     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
   });
