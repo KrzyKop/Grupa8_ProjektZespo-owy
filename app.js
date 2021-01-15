@@ -10,7 +10,21 @@ var stage9 = "stage9.html" // schemat
 var stage10 = "stage10.html" //bomba
 
 
-
+var password= [20]
+for(var i=0; i<21;i++)
+{
+	password[i]=0
+}
+password[1]=stage2;
+password[2]=stage3;
+password[3]=stage4;
+password[4]=stage5;
+password[5]=stage6;
+password[6]=stage7;
+password[7]=stage8;
+password[8]=stage9;
+password[9]=stage10;
+password[6+10]="pomocy bomba!"
 
 
 var stage_end_fail = "stage_end_failed.html"
@@ -59,6 +73,7 @@ function setplayer()
 	
     function stage2_next() //stage2
 {
+	setstage(stage3);
 	document.location.href = stage3;
 }
 
@@ -153,7 +168,7 @@ function addcounter()
 			failed()
 		}
 	}
- //kk
+ /*
   $('.ml1 .letters').each(function(){
     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
   });
@@ -170,5 +185,25 @@ function addcounter()
         return 70 * (i+1)
       }
     })
-
-	
+*/
+function changeimageone()
+{
+	document.body.style.backgroundImage = "url('img/schemat_pociagu_wagon1.jpeg')";
+}
+function changeimagetwo()
+{
+	document.body.style.backgroundImage = "url('img/schemat_pociagu_wagon2.jpeg')";
+}
+function changeimagethree()
+{
+	document.body.style.backgroundImage = "url('img/schemat_pociagu_wagon3.jpeg')";
+}
+function changeimagefour()
+{
+	document.body.style.backgroundImage = "url('img/schemat_pociagu_wagon4.jpeg')";
+}
+function changeimagefive()
+{
+	document.body.style.backgroundImage ="url('img/schemat_pociagu_wagon5.jpeg')";
+}
+		
