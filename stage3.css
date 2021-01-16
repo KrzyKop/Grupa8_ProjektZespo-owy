@@ -1,3 +1,18 @@
+body
+{
+  margin: 0px;
+}
+#container
+{
+  display: flex; align-items: center; justify-content: center; height: 100vh; background-color: green;;
+}
+#game
+{
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/laptop1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 ::-webkit-input-placeholder { /* Edge */
     color:silver;
   }
@@ -25,11 +40,11 @@
   #button3_next {
     background-color:silver;
     color: black;
-    width: 23px;
-    height: 20px;
+    width: 28px;
+    height: 24px;
     text-align: center;
     text-decoration: none;
-    font-size: 8px;
+    font-size: 10px;
     margin-left: 2px;
 
     border: 2px solid #000000;
@@ -44,7 +59,7 @@
 position: absolute;
 width: 180px;
 height: 21px;
-left: 695px;
+left: 450px;
 top: 225px;
 
 
