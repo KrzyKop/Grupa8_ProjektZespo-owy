@@ -1,5 +1,5 @@
-var mainpage="main.html"
-var stage2 = "stage2.html"
+var mainpage="main.html" ///ogarniete +porzadek w kodzie zrobiony
+var stage2 = "stage2.html" /// porzadek w kodzie zrobiony ///przecinki!!!
 var stage3 = "stage3.html"
 var stage4 = "stage4.html"
 var stage5 = "stage5.html" 
@@ -48,7 +48,7 @@ function err_createElement(error)
  err_btn.classList.add("err_btn"); 
  err_btn.addEventListener("click", err_close);	
 
-  document.getElementById("button_play").disabled = true;
+ document.getElementById("button_play").disabled = true;
 }
 function err_close()
 {
@@ -71,18 +71,9 @@ function setplayer()
 	}
 	else
 	{
-		decision = true
+		player=tmp;
+	 	startfun();
 	}
-
- if(decision==true)
- {
-	 player=tmp;
-	 startfun();
- }
- else
- {
-	 addcounter();
- }
 }
 	function backtomainpage() // niedkonczone
 	{
@@ -149,7 +140,7 @@ function stage9_next() //stage9
 	}
 	else
 	{
-		addcounter();
+		checkPassword();
 	}
 	if(nextto==true)
 	{
@@ -284,6 +275,18 @@ function addcounter()
 		}
 		else{console.log("error")}
 	}
+	function checkPassword()
+	{
+		if(counter <4)
+		{
+			var error="Błedne hasło!!!";
+				err_createElement(error);		
+		}else if(counter==4)
+		{
+			failed()
+		}
+		else{console.log("error")}
+	}
  /*
   $('.ml1 .letters').each(function(){
     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -304,23 +307,23 @@ function addcounter()
 */
 function changeimageone()
 {
-	document.body.style.backgroundImage = "url('img/schemat_pociagu_wagon1.jpeg')";
+	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon1.jpeg')";
 }
 function changeimagetwo()
 {
-	document.body.style.backgroundImage = "url('img/schemat_pociagu_wagon2.jpeg')";
+	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon2.jpeg')";
 }
 function changeimagethree()
 {
-	document.body.style.backgroundImage = "url('img/schemat_pociagu_wagon3.jpeg')";
+	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon3.jpeg')";
 }
 function changeimagefour()
 {
-	document.body.style.backgroundImage = "url('img/schemat_pociagu_wagon4.jpeg')";
+	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon4.jpeg')";
 }
 function changeimagefive()
 {
-	document.body.style.backgroundImage ="url('img/schemat_pociagu_wagon5.jpeg')";
+	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon5.jpeg')";
 
 }
 		

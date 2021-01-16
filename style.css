@@ -8,22 +8,18 @@ body
 }
 #game
 {
-  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/main.jpeg);
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/main.jpeg); position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 #main_textbox
 {
-
 position: absolute;
 width: 1005px;
 height: 116px;
 left: 270px;
 top: 725px;
-
 background: #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
@@ -43,12 +39,11 @@ top: 725px;
 background: #000000;
 border: none;
 color: white;
-
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
 font-size: 72px;
 line-height: 72px;
-padding-top: 17px;
 text-align: center;
+padding-top: 20px;
 }

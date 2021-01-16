@@ -8,7 +8,7 @@ body
 }
 #game
 {
-  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/laptop1.jpg);
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/laptop1.jpg);  position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -22,22 +22,18 @@ body
   }
 
   ::placeholder {
-    color: silver;
+    color: rgb(7, 7, 7);
     font-size: 10px;
   }
   
-  body {
-    background-image: url(img/laptop1.jpg);;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  html {
-    height: 100%
-  }
   input, textarea {
     background-color: silver;
+    color: black;
   }
   #button3_next {
+    position: absolute;
+    left: 989;
+    top: 286;
     background-color:silver;
     color: black;
     width: 28px;
@@ -45,23 +41,39 @@ body
     text-align: center;
     text-decoration: none;
     font-size: 10px;
-    margin-left: 2px;
+    font-family: Special Elite;
+    font-style: normal;
+    font-weight: normal;
+   
 
+    
     border: 2px solid #000000;
     box-sizing: border-box;
 
+
   }
-.div
+/*.div
 {
 
-/* Rectangle 8 */
+ Rectangle 8 
 
 position: absolute;
 width: 180px;
 height: 21px;
 left: 450px;
 top: 225px;
+}
+*/
+#stage3_id
+{
+  position: absolute;
+  left: 859;
+  top: 286;
+  width: 120px; font-size: 10px; text-align: left; color: black; 
+  height: 24px;
+  font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
 
-
-
+ 
 }

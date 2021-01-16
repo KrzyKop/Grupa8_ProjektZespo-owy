@@ -1,13 +1,19 @@
 
-
-body {
-  background-image: url(img/bomba.jpeg);;
+body
+{
+  margin: 0px;
+}
+#container
+{
+  display: flex; align-items: center; justify-content: center; height: 100vh; background-color: green;;
+}
+#game
+{
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/bomba.jpeg); position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-html {
-  height: 100%
-}
+
 
 #p1
 {
