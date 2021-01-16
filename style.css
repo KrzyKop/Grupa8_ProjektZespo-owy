@@ -1,16 +1,3 @@
-body{
-
-  font-family: Special Elite;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 64px;
-  line-height: 64px;
-  
-  text-align: center;
-}
-
-
-
 body {
   background-image: url(img/main.jpeg);;
   background-repeat: no-repeat;
@@ -32,6 +19,7 @@ top: 725px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 background: #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
@@ -39,6 +27,7 @@ font-size: 64px;
 line-height: 64px;
 color: white;
 border: none;
+padding-left: 40px;
 }
 #button_play
 {
@@ -50,42 +39,16 @@ height: 116px;
 left: 1349px;
 top: 725px;
 background: #000000;
-}
-#text_button
-{
- 
-/* GRAJ */
-
-position: absolute;
-width: 169px;
-height: 72px;
-left: 1400px;
-top: 743px;
+border: none;
+color: white;
 
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
 font-size: 72px;
 line-height: 72px;
-/* identical to box height */
-display: flex;
-align-items: center;
+padding-top: 17px;
 text-align: center;
 
-color: #FFFFFF;
-
-
-
 }
-.div_q{
-/* Rectangle 39 */
 
-position: absolute;
-width: 1296px;
-height: 301px;
-left: calc(50% - 1296px/2);
-top: calc(50% - 301px/2 + 150.5px);
-
-background: rgb(121, 120, 120);
-
-}

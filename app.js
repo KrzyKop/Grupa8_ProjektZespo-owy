@@ -43,12 +43,12 @@ function err_createElement(error)
   
   var err_btn = document.createElement("div");
   err_btn.id="error_btn"
-  err_btn.innerHTML = "X";
+  err_btn.innerHTML = "x";
  document.body.appendChild(err_btn);
  err_btn.classList.add("err_btn"); 
  err_btn.addEventListener("click", err_close);	
 
-  document.getElementById("text_button").disabled = true;
+  document.getElementById("button_play").disabled = true;
 }
 function err_close()
 {
@@ -57,7 +57,7 @@ function err_close()
 	
 	 removed_div.remove();
 	 removed_btn.remove();
-	///document.getElementById("btn").disabled = false;	 check it
+	document.getElementById("button_play").disabled = false;	
 }
 function setplayer() 
 {
@@ -270,17 +270,13 @@ function addcounter()
 		counter++
 		checkcounter()
 	}
-	function printCounter(){console.log("counter: "+ counter)}
 	function checkcounter()
 	{
 		printCounter()
 		if(counter <4)
 		{
 			var error="Błedne hasło!!!";
-				err_createElement(error);
-				console.log("cccc")
-				
-				
+				err_createElement(error);		
 		}else if(counter==4)
 		{
 			failed()
