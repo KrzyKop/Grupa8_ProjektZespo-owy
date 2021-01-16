@@ -1,18 +1,7 @@
-::-webkit-input-placeholder { /* Edge */
-  color: silver;
-}
 
-:-ms-input-placeholder { /* Internet Explorer */
-  color: silver;
-}
-
-::placeholder {
-  color: silver;
-  font-size: 25px;
-}
 
 body {
-  background-image: url(img/schemat_pociagu_wagon5.jpeg);;
+  background-image: url(img/schemat_pociagu_wagon1.jpeg);;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -22,9 +11,10 @@ html {
 button, textarea, input {
   background-color: black;
   color: white;
+  border: none;
 }
 
-#stage6_button
+#btn
 {
   
 /* Rectangle 4 */
@@ -33,18 +23,11 @@ position: absolute;
 width: 108px;
 height: 116px;
 left: 1351px;
-top: 774px;
+top: 775px;
 
 background: #000000;
-
-/* -> */
-
-position: absolute;
-
-height: 116px;
-left: 1381px;
-
-
+padding-top:20px;
+padding-left: 15px;
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
@@ -53,13 +36,13 @@ line-height: 72px;
 display: flex;
 align-items: center;
 text-align: center;
-
+border: none;
 color: #FFFFFF;
 
 
 
 }
-#stage6_input
+#stage9_input
 {
   /* Rectangle 1 */
 

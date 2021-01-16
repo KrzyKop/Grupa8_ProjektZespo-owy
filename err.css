@@ -1,0 +1,93 @@
+.error_div
+{
+/* Rectangle 37 */
+
+position: absolute;
+width: 1185px;
+height: 234px;
+left: 367px;
+top: 451px;
+
+background: rgba(196, 196, 196, 0.85);
+font-size: 50px;
+color: red;
+text-align: center;
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 64px;
+padding-top: 20px;
+font-weight: bolder;
+}
+.err_btn
+{
+/* Ellipse 1 */
+position: absolute;
+width: 21px;
+height: 21px;
+left: 1518px;
+top: 461px;
+border-radius: 90%;
+border: 2px solid #000000;
+box-sizing: border-box;
+text-align: center;
+
+}
+#final
+{
+    position: absolute;
+    width: 1185px;
+    height: 234px;
+    left: 367px;
+    top: 451px;
+
+    background: rgba(202, 202, 202, 0.9);
+    color: red;
+    text-align: center;
+    font-family: Special Elite;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 64px;
+    padding-top: 30px;
+}
+.final_yes
+{
+    /* Rectangle 41 */
+
+position: absolute;
+width: 353px;
+height: 62px;
+left: 426px;
+top: 579px;
+text-align: center;
+    font-family: Special Elite;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+background: #1E7C2D;
+padding-top: 20px;
+
+}
+
+
+.final_no
+{
+    /* Rectangle 41 */
+
+position: absolute;
+width: 353px;
+height: 62px;
+left: 1126px;
+top: 579px;
+text-align: center;
+    font-family: Special Elite;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+background: #EB0202;
+
+padding-top: 20px;
+
+}

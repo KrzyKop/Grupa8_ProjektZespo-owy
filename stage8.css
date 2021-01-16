@@ -26,35 +26,35 @@ width: 1712px;
 height: 661px;
 left: 104px;
 top: 118px;
-
 background: rgba(255, 255, 255, 0.5);
-
 position: absolute;
 width: 1625px;
 height: 379px;
 left: 191px;
 top: 179px;
-
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
 font-size: 48px;
 line-height: 48px;
-
 color: #000000;
-
 }
 
 .buttonnext
 { 
   /* Rectangle 3 */
-
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 72px;
 position: absolute;
 width: 301px;
 height: 116px;
 left: 809px;
 top: 900px;
-
+padding-left: 45px;
+padding-top: 15px;
 background: #000000;
 
 

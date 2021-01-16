@@ -70,10 +70,13 @@ text-align: center;
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
-font-size: 48px;
+font-size: 38px;
 line-height: 48px;
 display: flex;
 align-items: center;
 color: #FFFFFF;
+border: none;
+padding-left: 20px;
+padding-top: 10px;
 
 }

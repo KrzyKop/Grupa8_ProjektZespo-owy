@@ -1,3 +1,6 @@
+/*stage2 wiekszy padding z prawej lewej strony, powrot do normalnego tla*/
+/*stage8 wiekszy padding z prawej lewej strony, */
+
 body {
  background-image: url(img/stage2.jpeg); 
   background-repeat: no-repeat;

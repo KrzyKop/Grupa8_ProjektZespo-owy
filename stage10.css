@@ -1,15 +1,4 @@
-::-webkit-input-placeholder { /* Edge */
-  color: silver;
-}
 
-:-ms-input-placeholder { /* Internet Explorer */
-  color: silver;
-}
-
-::placeholder {
-  color: silver;
-  font-size: 25px;
-}
 
 body {
   background-image: url(img/bomba.jpeg);;
@@ -19,6 +8,40 @@ body {
 html {
   height: 100%
 }
-body {
+
+#p1
+{
   cursor:url(img/cutter.png),auto;
+position: absolute;
+width: 25px;
+height: 215px;
+left: 245px;
+top: 222px;
+}
+#p2
+{
+ cursor:url(img/cutter.png),auto;
+ 
+  position: absolute;
+  width: 35px;
+  height: 215px;
+  left: 360px;
+  top: 222px;
+}
+#p3{
+  cursor:url(img/cutter.png),auto;
+  position: absolute;
+  width: 43px;
+  height: 225px;
+  left: 580px;
+  top: 218px;
+}
+#p4
+{
+  cursor:url(img/cutter.png),auto;
+  position: absolute;
+  width: 43px;
+  height: 225px;
+  left: 830px;
+  top: 210px;
 }
