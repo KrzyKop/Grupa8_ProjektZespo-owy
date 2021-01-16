@@ -1,18 +1,20 @@
-/*stage2 wiekszy padding z prawej lewej strony, powrot do normalnego tla*/
-/*stage8 wiekszy padding z prawej lewej strony, */
-
-body {
- background-image: url(img/stage2.jpeg); 
+body
+{
+  margin: 0px;
+}
+#container
+{
+  display: flex; align-items: center; justify-content: center; height: 100vh; background-color: black;;
+}
+#game
+{
+  width: 1600px; height: 900px; 
+   margin:auto; flex: auto; 
+   background-image: url(img/stage2.jpeg);;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  font: 13px "Source Sans Pro", Arial, Helvetica, sans-serif;
-    color: #000000;
-    text-align: center;
-  
 }
-html {
-  height: 100%
-}
+
 input, textarea {
   background-color: black;
 }
@@ -102,6 +104,9 @@ align-items: center;
 text-align: center;
 background-color: #000000;
 color: #FFFFFF;
+text-align: center;
+border:none;
+padding-top: 15px;
 
 
 }

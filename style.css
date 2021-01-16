@@ -1,22 +1,26 @@
-body {
-  background-image: url(img/main.jpeg);;
+body
+{
+  margin: 0px;
+}
+#container
+{
+  display: flex; align-items: center; justify-content: center; height: 100vh; background-color: black;;
+}
+#game
+{
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/main.jpeg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-html {
-  height: 100%
-}
-
 #main_textbox
 {
-/* Rectangle 1 */
 
 position: absolute;
 width: 1005px;
 height: 116px;
 left: 270px;
 top: 725px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 background: #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -31,8 +35,6 @@ padding-left: 40px;
 }
 #button_play
 {
-/* Rectangle 2 */
-
 position: absolute;
 width: 301px;
 height: 116px;
@@ -49,6 +51,4 @@ font-size: 72px;
 line-height: 72px;
 padding-top: 17px;
 text-align: center;
-
 }
-

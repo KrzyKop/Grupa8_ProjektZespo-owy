@@ -132,7 +132,7 @@ function move_stage_train() //stage8a
   my_div = document.getElementById("org_div1");
   document.body.insertBefore(newDiv, my_div);
   var btn = document.createElement("button");
-  btn.innerHTML = "Dalej!";
+  btn.innerHTML = "DALEJ!";
   document.body.appendChild(btn);
   btn.classList.add("buttonnext"); 
   btn.addEventListener("click", stage8_next);	
@@ -141,6 +141,8 @@ function stage9_next() //stage9
 {
 	var nextto=false;
 	var password_from_users = document.getElementById("stage9_input").value;
+	password_from_users=password_from_users.toLowerCase()
+
 	if(password_from_users==password[9])
 	{
 		nextto=true;
@@ -272,7 +274,6 @@ function addcounter()
 	}
 	function checkcounter()
 	{
-		printCounter()
 		if(counter <4)
 		{
 			var error="Błedne hasło!!!";
