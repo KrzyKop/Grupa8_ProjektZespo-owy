@@ -1,6 +1,7 @@
 var mainpage="main.html" ///ogarniete +porzadek w kodzie zrobiony
 var stage2 = "stage2.html" /// porzadek w kodzie zrobiony ///przecinki!!!
 var stage3 = "stage3.html"
+var stage3a = "stage3a.html"
 var stage4 = "stage4.html"
 var stage5 = "stage5.html" 
 var stage6 = "stage6.html"
@@ -16,10 +17,10 @@ var stage_end_pos = "stage_end_pos.html";
 var password= [10]
 
 password[1]=stage2;
-password[2]=stage3;
-password[3]=stage4;
+password[2]="x"; //stage3
+password[3]="x"; //stage4
 password[4]=stage5;
-password[5]=stage6;
+password[5]="x"; //stage6
 password[6]=stage7;
 password[7]=stage8;
 password[8]="x";
@@ -91,7 +92,42 @@ function setplayer()
 
 	function stage3_next() //stage3
 {
-	document.location.href = stage4;
+	var nextto=false;
+	var password_from_users = document.getElementById("stage3_input").value;
+	password_from_users=password_from_users.toLowerCase()
+
+	if(password_from_users==password[2])
+	{
+		nextto=true;
+	}
+	else
+	{
+		checkPassword();
+	}
+	if(nextto==true)
+	{
+		document.location.href = stage4;
+	}
+}
+
+function stage3a_next() //stage3a
+{
+	var nextto=false;
+	var password_from_users = document.getElementById("stage3a_input").value;
+	password_from_users=password_from_users.toLowerCase()
+
+	if(password_from_users==password[2])
+	{
+		nextto=true;
+	}
+	else
+	{
+		checkPassword();
+	}
+	if(nextto==true)
+	{
+		document.location.href = stage4;
+	}
 }
 
 	function stage3_close() //stage3
@@ -106,7 +142,22 @@ function setplayer()
 
 	function stage4_next() //stage4
 {
-	document.location.href = stage5;
+	var nextto=false;
+	var password_from_users = document.getElementById("stage4_input").value;
+	password_from_users=password_from_users.toLowerCase()
+
+	if(password_from_users==password[3])
+	{
+		nextto=true;
+	}
+	else
+	{
+		checkPassword();
+	}
+	if(nextto==true)
+	{
+		document.location.href = stage5;
+	}
 }
 
 	function stage5_next() //stage5
@@ -115,7 +166,22 @@ function setplayer()
 }
 function stage6_next() //stage6
 {
-	document.location.href = stage7;
+	var nextto=false;
+	var password_from_users = document.getElementById("stage6_input").value;
+	password_from_users=password_from_users.toLowerCase()
+
+	if(password_from_users==password[5])
+	{
+		nextto=true;
+	}
+	else
+	{
+		checkPassword();
+	}
+	if(nextto==true)
+	{
+		document.location.href = stage7;
+	}
 }
 function stage7_next() //stage7
 {

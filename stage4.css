@@ -40,8 +40,6 @@ body
 
 .rectangle
 {
-  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń */
-
   position: absolute;
   left: 140px;
   top: 320px;
@@ -52,8 +50,20 @@ body
   line-height: 48px;
 
 color: #000000;
+}
 
+.rectangle2
+{
+  position: absolute;
+  left: 1700px;
+  top: 600px;
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
 
+color: #000000;
 }
 
 #button_next {
@@ -74,7 +84,7 @@ color: #000000;
 
 }
 
-#stage4_id
+#stage4_input
 {
   position: absolute;
   width: 680px;
