@@ -1,26 +1,22 @@
-::-webkit-input-placeholder { /* Edge */
-  color: silver;
+body
+{
+  margin: 0px;
 }
-
-:-ms-input-placeholder { /* Internet Explorer */
-  color: silver;
+#container
+{
+  display: flex; align-items: center; justify-content: center; height: 100vh; background-color: black;;
 }
-
-::placeholder {
-  color: silver;
-  font-size: 25px;
-}
-
-body {
-  background-image: url(img/driving_train.jpeg);;
+#game
+{
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/driving_train.jpeg); position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-html {
-  height: 100%
-}
+
 .mystyle
 {
+padding: 30px;
+padding-bottom: 0px;
 position: absolute;
 width: 1712px;
 height: 661px;
@@ -48,38 +44,28 @@ color: #000000;
   font-weight: normal;
   font-size: 72px;
   line-height: 72px;
-position: absolute;
-width: 301px;
-height: 116px;
-left: 809px;
-top: 900px;
-padding-left: 35px;
-padding-top: 15px;
-background: #000000;
-
-
-/* DALEJ */
-
-position: absolute;
-width: 301px;
-height: 72px;
-left: 809px;
-top: 933px;
-
-font-family: Special Elite;
-font-style: normal;
-font-weight: normal;
-font-size: 72px;
-line-height: 72px;
-/* identical to box height */
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
-
-
+  position: absolute;
+  width: 301px;
+  height: 116px;
+  left: 809px;
+  top: 900px;
+  padding-left: 35px;
+  padding-top: 15px;
+  background: #000000;
+  /* DALEJ */
+  position: absolute;
+  width: 301px;
+  height: 72px;
+  left: 809px;
+  top: 733px;
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 72px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
 }
-
-
-

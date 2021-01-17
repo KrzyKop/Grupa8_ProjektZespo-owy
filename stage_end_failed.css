@@ -1,24 +1,18 @@
-::-webkit-input-placeholder { /* Edge */
-  color: silver;
+body
+{
+  margin: 0px;
 }
-
-:-ms-input-placeholder { /* Internet Explorer */
-  color: silver;
+#container
+{
+  display: flex; align-items: center; justify-content: center; height: 100vh; background-color: black;;
 }
-
-::placeholder {
-  color: silver;
-  font-size: 25px;
-}
-
-body {
-  background-image: url(img/ogien.jpeg);;
+#game
+{
+  width: 1600px; height: 900px;  margin:auto; flex: auto;    background-image: url(img/ogien.jpeg); position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-html {
-  height: 100%
-}
+
 input, textarea {
   background-color: black;
 }
@@ -60,23 +54,22 @@ color: #000000;
 #wantagain
 {
   padding: 0px;
-top: 800px;
-background: #000000;
-position: absolute;
-width: 296px;
-height: 48px;
-left: 839px;
-text-align: center;
-font-family: Special Elite;
-font-style: normal;
-font-weight: normal;
-font-size: 38px;
-line-height: 48px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
-border: none;
-padding-left: 20px;
-padding-top: 10px;
-
+  top: 800px;
+  background: #000000;
+  position: absolute;
+  width: 296px;
+  height: 48px;
+  left: 839px;
+  text-align: center;
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  border: none;
+  padding-left: 20px;
+  padding-top: 10px;
 }
