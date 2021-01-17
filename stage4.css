@@ -1,3 +1,18 @@
+body
+{
+  margin: 0px;
+}
+#container
+{
+  display: flex; align-items: center; justify-content: center; height: 100vh; background-color: black;;
+}
+#game
+{
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/laptoplog2.jpg);  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 ::-webkit-input-placeholder { /* Edge */
     color:silver;
   }
@@ -27,12 +42,14 @@
 {
   /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń */
 
-
-font-family: Special Elite;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 48px;
+  position: absolute;
+  left: 140px;
+  top: 320px;
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
 
 color: #000000;
 
@@ -40,24 +57,37 @@ color: #000000;
 }
 
 #button_next {
+  position: absolute;
+  left: 1270;
+  top: 740;
   background-color:black;
+  font-family: Special Elite;
   color: whitesmoke;
   width: 70px;
-  height: 50px;
+  height: 60px;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 5px;
 
   background: rgba(0, 0, 0, 0.7);
 
 }
 
+#stage4_id
+{
+  position: absolute;
+  width: 680px;
+  height: 50px;
+  left: 625px;
+  top: 740px;
+}
 
-.div
+
+/*.div
 {
 
-/* Rectangle 1 */
+
 
 position: absolute;
 width: 680px;
@@ -66,4 +96,4 @@ left: 421px;
 top: 620px;
 
 
-}
+}*/

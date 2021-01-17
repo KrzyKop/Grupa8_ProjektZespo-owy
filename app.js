@@ -94,6 +94,16 @@ function setplayer()
 	document.location.href = stage4;
 }
 
+	function stage3_close() //stage3
+{
+	document.location.href = stage3a;
+}
+
+	function stage3a_far() //stage3a
+{
+	document.location.href = stage3;
+}
+
 	function stage4_next() //stage4
 {
 	document.location.href = stage5;

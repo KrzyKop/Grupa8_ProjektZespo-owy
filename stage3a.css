@@ -8,7 +8,7 @@ body
 }
 #game
 {
-  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/laptop1.jpg);  position: relative;
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/laptoplog.jpg);  position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -23,7 +23,8 @@ body
 
   ::placeholder {
     color: rgb(7, 7, 7);
-    font-size: 10px;
+    font-family: Special Elite;
+    font-size: 40px;
   }
   
   input, textarea {
@@ -32,15 +33,15 @@ body
   }
   #button3_next {
     position: absolute;
-    left: 1005;
-    top: 286;
+    left: 1130;
+    top: 490px;
     background-color:silver;
     color: black;
-    width: 28px;
-    height: 24px;
+    width: 54px;
+    height: 52px;
     text-align: center;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 30px;
     font-family: Special Elite;
     font-style: normal;
     font-weight: normal;
@@ -52,28 +53,28 @@ body
 
 
   }
-/*.div
-{
 
- Rectangle 8 
-
-position: absolute;
-width: 180px;
-height: 21px;
-left: 450px;
-top: 225px;
-}
-*/
-#stage3_id
+#stage3a_id
 {
   position: absolute;
-  left: 875;
-  top: 286;
-  width: 120px; font-size: 10px; text-align: left; color: black; 
-  height: 24px;
+  left: 720px;
+  top: 490px;
+  font-size: 60px; 
+  text-align: left; 
+  color: black; 
+  
   font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
 
  
+}
+
+#button3_far
+{
+    position: absolute;
+    left: 1200;
+    top: 300px;
+    width: 100px;
+    height: 100px;
 }

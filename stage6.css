@@ -1,3 +1,18 @@
+body
+{
+  margin: 0px;
+}
+#container
+{
+  display: flex; align-items: center; justify-content: center; height: 100vh; background-color: black;;
+}
+#game
+{
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/interkom\ szkic2.jpg);  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 ::-webkit-input-placeholder { /* Edge */
     color: silver;
   }
@@ -12,7 +27,7 @@
   }
   
   body {
-    background-image: url(img/interkom\ szkic2.jpg);;
+    background-image: url(img/interkom\ szkic2.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -21,17 +36,22 @@
   }
   input, textarea {
     background-color: black;
+    font-family: Special Elite;
   }
 
-
-  .div
-  {
-      /* Rectangle 2 */
-
+#button_next
+{
 position: absolute;
-width: 650px;
-height: 50px;
-left: 410px;
-top: 435px;
+width: 110px;
+height: 110px;
+left: 1310px;
+top: 520px;
+opacity: 0;
+}
 
-  }
+#stage6_id
+{
+position: absolute;
+left: 510px;
+top: 535px;
+}

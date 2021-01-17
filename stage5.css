@@ -1,3 +1,18 @@
+body
+{
+  margin: 0px;
+}
+#container
+{
+  display: flex; align-items: center; justify-content: center; height: 100vh; background-color: black;;
+}
+#game
+{
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/kabina1.png);  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 ::-webkit-input-placeholder { /* Edge */
     color: silver;
   }
@@ -25,41 +40,33 @@
 
 #button_next
 {
-  /* Rectangle 3 */
+position: absolute;
+left: 870px;
+top: 780px;
 background-color:black;
 color: whitesmoke;
-position: absolute;
 width: 250px;
-height: 70px;
-left: 700px;
-top: 640px;
+height: 68px;
 font-family: Special Elite;
-font-style: normal;
-font-weight: normal;
 font-size: 70px;
 line-height: 72px;
-/* identical to box height */
-display: flex;
-align-items: center;
 text-align: center;
+text-decoration: none;
+border:none;
 
-color: #FFFFFF;
-
-
-
-
-
+background: rgba(0, 0, 0, 0.7);
 }
 
-  .rectangle
-  {
+
+.rectangle
+{
       /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. */
 
 position: absolute;
 width: 275px;
 height: 148.94px;
-left: 22%;
-top: 20%;
+left: 450px;
+top: 190px;
 
 font-family: Special Elite;
 font-style: normal;
@@ -71,19 +78,17 @@ text-align: center;
 color: #000000;
 
 transform: rotate(-0.67deg);
+}
 
-
-  }
-
-  #rectangle2
-  {
+.rectangle2
+{
 /* Instrukcja BHP */
 
 position: absolute;
 width: 114px;
 height: 16px;
 left: 1389px;
-top: 322px;
+top: 300px;
 
 font-family: Special Elite;
 font-style: normal;
@@ -94,26 +99,49 @@ line-height: 14px;
 color: #000000;
 
 
-  }
+}
 
-  #rectangle3
-  {
+.rectangle3
+{
 /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet */
 
 position: absolute;
 width: 258.89px;
-height: 353.11px;
+height: 500px;
 left: 1314px;
-top: 360.05px;
+top: 340px;
 
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
-font-size: 10px;
-line-height: 10px;
+font-size: 13px;
+line-height: 24px;
 
 color: #000000;
 
 transform: rotate(-0.67deg);
 
-  }
+}
+
+.board
+{
+padding: 30px;
+padding-bottom: 0px;
+position: absolute;
+width: 1712px;
+height: 661px;
+left: 104px;
+top: 118px;
+background: rgba(255, 255, 255, 0.5);
+position: absolute;
+width: 1625px;
+height: 340px;
+left: 120px;
+top: 179px;
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 48px;
+color: #000000;
+}
