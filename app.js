@@ -297,7 +297,7 @@ function addcounter()
 		}
 		else{console.log("error")}
 	}
- /*
+ 
   $('.ml1 .letters').each(function(){
     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
   });
@@ -314,7 +314,7 @@ function addcounter()
         return 70 * (i+1)
       }
     })
-*/
+
 function changeimageone()
 {
 	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon1.jpeg')";

@@ -1,0 +1,99 @@
+body
+{
+  margin: 0px;
+}
+#container
+{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh;
+    background-color: black;;
+}
+#game
+{
+    width: 1600px;
+    height: 900px; 
+    margin:auto;
+    flex: auto;  
+    background-image: url(img/positive.jpeg); 
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#positive
+{
+    position: absolute;
+    width: 936px;
+    height: 147px;
+    left: 492px;
+    top: 113px;
+    font-family: Special Elite;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 144px;
+    line-height: 144px;
+    color: #000000;
+}
+#text1
+{
+    position: absolute;
+    width: 754px;
+    height: 63px;
+    left: 913px;
+    top: 389px;
+    font-family: Special Elite;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    color: #000000;
+}
+#text2
+{
+    position: absolute;
+    width: 754px;
+    height: 63px;
+    left: 513px;
+    top: 489px;
+    font-family: Special Elite;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
+#score
+{
+    position: absolute;
+    width: 497px;
+    height: 95px;
+    left: 463px;
+    top: 636px;
+    font-family: Special Elite;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+#table_open
+{
+    position: absolute;
+    width: 505px;
+    height: 116px;
+    left: 708px;
+    top: 761px;
+    background: #000000;
+    color: white;
+    border: none;
+
+    font-family: Special Elite;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    text-align: center;
+    line-height: 130px;
+}
