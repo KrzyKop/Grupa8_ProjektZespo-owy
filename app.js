@@ -85,7 +85,7 @@ function setplayer()
 		   document.location.href = stage2;	
 	}
 	
-    function stage2_next() //stage2
+	function stage2_next() //stage2
 {
 	document.location.href = stage3;
 }
@@ -402,4 +402,3 @@ function changeimagefive()
 	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon5.jpeg')";
 
 }
-		
