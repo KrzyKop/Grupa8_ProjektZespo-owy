@@ -85,7 +85,7 @@ function setplayer()
 		   document.location.href = stage2;	
 	}
 	
-    function stage2_next() //stage2
+	function stage2_next() //stage2
 {
 	document.location.href = stage3;
 }
@@ -363,7 +363,7 @@ function addcounter()
 		}
 		else{console.log("error")}
 	}
- /*
+ 
   $('.ml1 .letters').each(function(){
     $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
   });
@@ -380,7 +380,7 @@ function addcounter()
         return 70 * (i+1)
       }
     })
-*/
+
 function changeimageone()
 {
 	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon1.jpeg')";
@@ -402,4 +402,3 @@ function changeimagefive()
 	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon5.jpeg')";
 
 }
-		
