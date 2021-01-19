@@ -209,7 +209,7 @@ function move_stage_train() //stage8a
 function stage9_next() //stage9
 {
 	
-	
+
 	var nextto=false;
 	var password_from_users = document.getElementById("stage9_input").value;
 	password_from_users=password_from_users.toLowerCase()
@@ -369,24 +369,24 @@ function addcounter()
 		}
 		else{console.log("error")}
 	}
- /*
-  $('.ml1 .letters').each(function(){
-    $(this).html($(this).text().replace(/\S/g, "<span class='letter'>$&</span>"));
-  });
-  var ml = { timelines: {}};
-  ml.timelines["ml1"] = anime.timeline({loop: false})
-    .add({
-      targets: '.letter',
-      scale: [0.3,1],
-      opacity: [0,1],
-      translateZ: 0,
-      easing: "easeOutExpo",
-      duration: 100,
-      delay: function(el, i) {
-        return 70 * (i+1)
-      }
-    })
-*/
+	$('.ml1 .letters').html($('.ml1 .letters').html().replace(/\S+/g, "<span class='word'>$&</span>"));
+ 
+	$('.ml1 .letters .word').each(function(){
+	  $(this).html($(this).text().replace(/\S/g, "<div class='letter'>$&</div>"));
+	});
+	var ml = { timelines: {}};
+	ml.timelines["ml1"] = anime.timeline({loop: false})
+	  .add({
+		targets: '.letter',
+		scale: [0.3,1],
+		opacity: [0,1],
+		translateZ: 0,
+		easing: "easeOutExpo",
+		duration: 100,
+		delay: function(el, i) {
+		  return 70 * (i+1)
+		}
+	  })
 function changeimageone()
 {
 	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon1.jpeg')";
@@ -414,7 +414,7 @@ function createMytime()
 {
 	var TimeStartGame = Date.now(); ///czas w mili sekundach
 	window.localStorage.setItem('MyTime',TimeStartGame );
-	alert("utworzono zmienna localstorage o wartosci:  " + TimeStartGame)
+	console.log("utworzono zmienna localstorage o wartosci:  " + TimeStartGame)
 }
 function getlocalstarage()
 {
