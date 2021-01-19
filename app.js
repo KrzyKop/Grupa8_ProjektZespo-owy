@@ -73,6 +73,7 @@ function setplayer()
 	else
 	{
 		player=tmp;
+		createMytime();
 	 	startfun();
 	}
 }
@@ -92,6 +93,7 @@ function setplayer()
 
 	function stage3_next() //stage3
 {
+	//alert("czas od rozpoczecia gry to:"+window.localStorage.getItem('MyTime'));
 	var nextto=false;
 	var password_from_users = document.getElementById("stage3_input").value;
 	password_from_users=password_from_users.toLowerCase()
@@ -206,6 +208,8 @@ function move_stage_train() //stage8a
 }
 function stage9_next() //stage9
 {
+	
+	
 	var nextto=false;
 	var password_from_users = document.getElementById("stage9_input").value;
 	password_from_users=password_from_users.toLowerCase()
@@ -222,6 +226,8 @@ function stage9_next() //stage9
 	{
 		document.location.href = stage10;
 	}
+	
+	
 }
 function stage10_next() //stage10
 {
@@ -363,9 +369,9 @@ function addcounter()
 		}
 		else{console.log("error")}
 	}
- 
+ /*
   $('.ml1 .letters').each(function(){
-    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    $(this).html($(this).text().replace(/\S/g, "<span class='letter'>$&</span>"));
   });
   var ml = { timelines: {}};
   ml.timelines["ml1"] = anime.timeline({loop: false})
@@ -380,7 +386,7 @@ function addcounter()
         return 70 * (i+1)
       }
     })
-
+*/
 function changeimageone()
 {
 	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon1.jpeg')";
@@ -400,5 +406,55 @@ function changeimagefour()
 function changeimagefive()
 {
 	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon5.jpeg')";
+}
 
+/* minutnik i stoper*/
+
+function createMytime()
+{
+	var TimeStartGame = Date.now(); ///czas w mili sekundach
+	window.localStorage.setItem('MyTime',TimeStartGame );
+	alert("utworzono zmienna localstorage o wartosci:  " + TimeStartGame)
+}
+function getlocalstarage()
+{
+	return window.localStorage.getItem('MyTime');
+}
+
+function getT_doTeraz()
+{
+	var x=getlocalstarage();
+	var tmp = Date.now();
+	var T=tmp-x;
+	console.log("czas do teraz"+ T);
+	T=T/1000;
+	T=parseInt(T);
+	console.log("czas do teraz"+ T);
+	return T;
+} 
+
+
+function stoper()
+{
+	function startTimer(duration, display) 
+                {
+                    var timer = duration, minutes, seconds;
+                    var id = setInterval(function() {
+                    minutes = parseInt(timer / 60, 10);
+                    seconds = parseInt(timer % 60, 10);
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+                    display.textContent = minutes + ":" + seconds;
+                    if (++timer < 0) 
+                    {	
+                         clearInterval(id);
+                    }
+                                                      }, 1000);						  							 
+                }
+            
+        window.onload = function () {
+            var fiveMinutes = getT_doTeraz();
+                display = document.querySelector('#time');
+            startTimer(fiveMinutes, display);
+        };
 }

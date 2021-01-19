@@ -55,3 +55,15 @@ position: absolute;
 left: 510px;
 top: 535px;
 }
+#time
+{
+  color: red;
+  line-height: 110px;
+  height: 100px;
+  width: 210px;
+  text-align: center;
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+}

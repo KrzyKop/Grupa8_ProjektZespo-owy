@@ -83,65 +83,78 @@ transform: rotate(-0.67deg);
 .rectangle2
 {
 /* Instrukcja BHP */
-
 position: absolute;
 width: 114px;
 height: 16px;
 left: 1389px;
 top: 300px;
-
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 14px;
-
 color: #000000;
-
-
 }
 
 .rectangle3
 {
 /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Lorem ipsum dolor sit amet Lorem ipsum dolor sit ametLorem ipsum dolor sit amet */
-
 position: absolute;
 width: 258.89px;
 height: 500px;
 left: 1314px;
 top: 340px;
-
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
 font-size: 13px;
 line-height: 24px;
-
 color: #000000;
-
 transform: rotate(-0.67deg);
-
 }
-
 .board
 {
-padding: 30px;
-padding-bottom: 0px;
-position: absolute;
-width: 1712px;
-height: 661px;
-left: 104px;
-top: 118px;
-background: rgba(255, 255, 255, 0.5);
-position: absolute;
-width: 1625px;
-height: 340px;
-left: 120px;
-top: 179px;
-font-family: Special Elite;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 48px;
-color: #000000;
+  padding: 30px;
+  padding-bottom: 0px;
+  position: absolute;
+  width: 1712px;
+  height: 661px;
+  left: 104px;
+  top: 118px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 1625px;
+  height: 340px;
+  left: 120px;
+  top: 179px;
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 48px;
+  color: #000000;
+}
+#time
+{
+  color: red;
+  line-height: 110px;
+  height: 100px;
+  width: 210px;
+  text-align: center;
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+}
+#time
+{
+  color: red;
+  line-height: 110px;
+  height: 100px;
+  width: 210px;
+  text-align: center;
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
 }
