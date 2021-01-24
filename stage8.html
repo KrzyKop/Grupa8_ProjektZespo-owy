@@ -3,8 +3,11 @@
 		<meta charset="UTF-8">
 		<title>PORZUCONA TECZKA</title>
 		<link rel="stylesheet" href="stage8.css">
+		<link rel="stylesheet" href="err.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 		<script src="app.js"></script>
 	</head>
 	<body>  
@@ -12,10 +15,8 @@
 			<div id="container" >
 				<div id="game">	
 					<div id="time"></div>
-					<h1 style="	position: absolute;	width: 76px;	height: 60px;	left: 202px;	top: 765px;	"> X</h1> 
-					<h1 style="	position: absolute;	width: 204px;	height: 108px;	left: 818px;	top: 657px;	">y</h1> 
-					<h1 style="	position: absolute;	width: 120px;	height: 138px;	left: 1546px;	top: 741px;	" onclick="move_stage_train()">z</h1>
-					<script> stoper(); </script>
+					
+					<script> stoper(); checkkey(); </script>
 				</div>
 			</div>	
 	</body>

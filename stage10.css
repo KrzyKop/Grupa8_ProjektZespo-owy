@@ -116,3 +116,19 @@ padding-top: 20px;
   font-weight: normal;
   font-size: 72px;
 }
+#timer
+{
+   position: absolute;
+  width: 350px;
+  height: 62px;
+  left: 700px;
+  top: 50px;
+  text-align: center;
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  border: 20px solid red;
+  padding-top: 20px; 
+
+}

@@ -8,7 +8,7 @@ body
 }
 #game
 {
-  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/schemat_pociagu_wagon5.jpeg);; position: relative;
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/schemat_pociagu_wagon1.jpeg);; position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -17,7 +17,7 @@ button, textarea, input {
   color: white;
   border: none;
 }
-#btn
+#button_play
 {
   position: absolute;
   width: 108px;
@@ -68,4 +68,54 @@ button, textarea, input {
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
+}
+.podpowiedz
+{
+
+  position: relative;
+ width: 150px;
+ height: 150px;
+  background-image: url(img/thumbnail.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 1650;
+  top: 600px;
+  
+}
+.podpowiedz_box
+{
+
+  position: relative;
+  width: 1600px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 150;
+  top: 680px;
+  
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: center;
+  line-height: 50px;
+ 
+}
+
+.err_btn2
+{
+position: absolute;
+width: 21px;
+height: 21px;
+left: 1705px;
+top: 791px;
+border-radius: 90%;
+border: 2px solid #000000;
+font-size: 20px;
+padding: auto;
+text-align: center;
+font-family: Special Elite;
+font-style: normal;
+color: red;
 }

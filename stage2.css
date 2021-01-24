@@ -33,9 +33,9 @@ body
 #button_next{
  
   position: absolute;
-  width: 301px;
-  height: 70px;
-  left: 809px;
+  width: 721px;
+  height: 116PX;;
+  left: 569px;
   top: 803px;
  
   font-family: Special Elite;
@@ -91,7 +91,7 @@ background-color: #2a1fcc;
 transform-origin: 0 0;
 }
 .moving-letters .word {
-	white-space: nowrap;
+	white-space: pre-wrap;
 }
 .ml1 .line1 { top: 0; }
 .ml1 .line2 { bottom: 0; }
