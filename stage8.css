@@ -8,7 +8,7 @@ body
 }
 #game
 {
-  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/driving_train.jpeg); position: relative;
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/stopmotion_poprawiony.gif); position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }

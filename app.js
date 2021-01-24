@@ -1,3 +1,4 @@
+
 var mainpage="main.html" ///ogarniete +porzadek w kodzie zrobiony
 var stage2 = "stage2.html" /// porzadek w kodzie zrobiony ///przecinki!!!
 var stage3 = "stage3.html"
@@ -12,6 +13,10 @@ var stage10 = "stage10.html" //bomba
 
 var stage_end_fail = "stage_end_failed.html"
 var stage_end_pos = "stage_end_pos.html"; 
+
+
+
+
 
 
 var password= [10]
@@ -73,6 +78,8 @@ function setplayer()
 	else
 	{
 		player=tmp;
+		window.localStorage.setItem('user', player);
+	    //alert(window.localStorage.getItem('user'));
 		createMytime();
 	 	startfun();
 	}
@@ -93,7 +100,6 @@ function setplayer()
 
 	function stage3_next() //stage3
 {
-	//alert("czas od rozpoczecia gry to:"+window.localStorage.getItem('MyTime'));
 	var nextto=false;
 	var password_from_users = document.getElementById("stage3_input").value;
 	password_from_users=password_from_users.toLowerCase()
@@ -111,7 +117,6 @@ function setplayer()
 		document.location.href = stage4;
 	}
 }
-
 function stage3a_next() //stage3a
 {
 	var nextto=false;
@@ -144,6 +149,7 @@ function stage3a_next() //stage3a
 
 	function stage4_next() //stage4
 {
+	//window.localStorage.clear();
 	var nextto=false;
 	var password_from_users = document.getElementById("stage4_input").value;
 	password_from_users=password_from_users.toLowerCase()
@@ -369,24 +375,29 @@ function addcounter()
 		}
 		else{console.log("error")}
 	}
-	$('.ml1 .letters').html($('.ml1 .letters').html().replace(/\S+/g, "<span class='word'>$&</span>"));
- 
-	$('.ml1 .letters .word').each(function(){
-	  $(this).html($(this).text().replace(/\S/g, "<div class='letter'>$&</div>"));
-	});
-	var ml = { timelines: {}};
-	ml.timelines["ml1"] = anime.timeline({loop: false})
-	  .add({
-		targets: '.letter',
-		scale: [0.3,1],
-		opacity: [0,1],
-		translateZ: 0,
-		easing: "easeOutExpo",
-		duration: 100,
-		delay: function(el, i) {
-		  return 70 * (i+1)
-		}
-	  })
+	function Literki(){
+
+		
+		$('.ml1 .letters').html($('.ml1 .letters').html().replace(/\S+/g, "<span class='word'>$&</span>"));
+		
+		$('.ml1 .letters .word').each(function(){
+			$(this).html($(this).text().replace(/\S/g, "<div class='letter'>$&</div>"));
+		});
+		var ml = { timelines: {}};
+		ml.timelines["ml1"] = anime.timeline({loop: false})
+		.add({
+			targets: '.letter',
+			scale: [0.3,1],
+			opacity: [0,1],
+			translateZ: 0,
+			easing: "easeOutExpo",
+			duration: 100,
+			delay: function(el, i) {
+				return 70 * (i+1)
+			}
+		})
+		
+	}
 function changeimageone()
 {
 	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon1.jpeg')";
@@ -420,7 +431,10 @@ function getlocalstarage()
 {
 	return window.localStorage.getItem('MyTime');
 }
-
+function getlocalstarage_play()
+{
+	window.localStorage.getItem('player');
+}
 function getT_doTeraz()
 {
 	var x=getlocalstarage();
@@ -431,6 +445,28 @@ function getT_doTeraz()
 	T=parseInt(T);
 	console.log("czas do teraz"+ T);
 	return T;
+} 
+function wypiszTime()
+{
+	var x=getlocalstarage();
+	var tmp = Date.now();
+	var T=tmp-x;
+	T=T/1000;
+	T=parseInt(T);
+	function ShowTime(duration, display) 
+                {
+                    minutes = parseInt(T / 60, 10);
+                    seconds = parseInt(T % 60, 10);
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+					display.textContent = "Wynik: "+minutes + ":" + seconds;					  							 
+                }
+        window.onload = function () {
+                display = document.querySelector('#score');
+				ShowTime(T, display);
+		};
+		window.localStorage.clear();
+		
 } 
 
 
@@ -458,3 +494,88 @@ function stoper()
             startTimer(fiveMinutes, display);
         };
 }
+function stageBomb()
+{
+	function startTimer(duration, display) 
+                {
+                    var timer = duration, minutes, seconds;
+                    var id = setInterval(function() {
+                    minutes = parseInt(timer / 60, 10);
+                    seconds = parseInt(timer % 60, 10);
+                    minutes = minutes < 10 ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+                    display.textContent = minutes + ":" + seconds;
+                    if (++timer < 0) 
+                    {	
+                         clearInterval(id);
+                    }
+                                                      }, 1000);						  							 
+				}
+				function startTimer2(duration2, display2) 
+                {
+                    var timer2 = duration2, minutes2, seconds2;
+                    var id2 = setInterval(function() {
+                    minutes2 = parseInt(timer2 / 60, 10);
+                    seconds2 = parseInt(timer2 % 60, 10);
+                    minutes2 = minutes2 < 10 ? "0" + minutes2 : minutes2;
+                    seconds2 = seconds2 < 10 ? "0" + seconds2 : seconds2;
+                    display2.textContent = minutes2 + ":" + seconds2;
+                    if (--timer2 < 0) 
+                    {	
+						 clearInterval(id2);
+						 failed();
+						/// var Boom = new Audio('51 $1,000,000 Final Answer - Millionaire.mp3');
+					///	 Boom.play();
+                    }
+                                                      }, 1000);						  							 
+                }
+            
+        window.onload = function () {
+            var fiveMinutes = getT_doTeraz();
+                display2 = document.querySelector('#timer');
+                display = document.querySelector('#time');
+			startTimer(fiveMinutes, display);
+			startTimer2(5*60, display2);
+        };
+}
+/*stage7*/
+function addToRadiov1()
+{
+	var a=document.getElementById("a").innerText;
+	if(a>-1&&a<9)
+	{
+		a++
+		document.getElementById("a").innerHTML=a;
+	}
+	
+}
+function addToRadiov2()
+{
+
+	var c=document.getElementById("c").innerText;
+	if(c>-1&&c<99)
+	{
+		c++
+		document.getElementById("c").innerHTML=c;
+	}
+	
+}
+function minusFromRadiov1()
+{
+	var a=document.getElementById("a").innerText;
+	if(a>0&&a<=9)
+		{
+			a--
+			document.getElementById("a").innerHTML=a;
+		}	
+}
+function minusFromRadiov2()
+{
+	var c=document.getElementById("c").innerText;
+	if(c>0&&c<=99)
+		{
+			c--
+			document.getElementById("c").innerHTML=c;
+		}	
+}
+

@@ -1,0 +1,86 @@
+body
+{
+  margin: 0px;
+}
+#container
+{
+  display: flex; align-items: center; justify-content: center; height: 100vh; background-color: black;;
+}
+#game
+{
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/radio.jpeg); position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#freq
+{
+  /* 9.88 */
+
+position: absolute;
+width: 159px;
+height: 48px;
+left: 669px;
+top: 393px;
+
+font-family: Special Elite;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 48px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+}
+
+#time
+{
+  color: red;
+  line-height: 110px;
+  height: 100px;
+  width: 210px;
+  text-align: center;
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+}
+.btn
+{
+  position: absolute;
+width: 76px;
+height: 76px;
+font-size: 30px;
+text-align: center;
+float: left;
+
+}
+#d
+{
+  left: 368px;
+  top : 350px;
+
+}
+#e
+{
+  left: 370px;
+  top : 500px;
+ 
+}
+#f
+{
+  left: 287px;
+  top : 430px;
+
+}
+#g
+{
+  left: 450px;
+  top : 430px;
+
+}
+
