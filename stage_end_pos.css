@@ -55,7 +55,7 @@ body
     width: 754px;
     height: 63px;
     left: 513px;
-    top: 489px;
+    top: 545px;
     font-family: Special Elite;
     font-style: normal;
     font-weight: normal;
@@ -69,7 +69,23 @@ body
     width: 497px;
     height: 95px;
     left: 463px;
-    top: 636px;
+    top: 666px;
+    font-family: Special Elite;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+#podpowiedzi
+{
+    position: absolute;
+    width: 497px;
+    height: 95px;
+    left: 1063px;
+    top: 666px;
     font-family: Special Elite;
     font-style: normal;
     font-weight: normal;
@@ -93,9 +109,9 @@ body
     font-family: Special Elite;
     font-style: normal;
     font-weight: normal;
-    font-size: 70px;
+    font-size: 40px;
     text-align: center;
-    line-height: 130px;
+   
 }
 #time
 {

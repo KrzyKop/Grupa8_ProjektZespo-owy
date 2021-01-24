@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="stage7.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script src="app.js"></script>
 </head>
 <body>  
@@ -16,12 +18,26 @@
 			<div id="e" onclick="minusFromRadiov1()"class="btn"></div>
 			<div id="f" onclick="minusFromRadiov2()"class="btn"></div>
 			<div id="g" onclick="addToRadiov2()"class="btn"></div>
+			<div id="checkedfreq" onclick="checkfreq()"class="btn"></div>
 			
 			<div id="freq" onclick="setradio()">
 				<div id="a">0</div>
 				<div id="b">.</div>
-				<div id="c" >42</div>			</div>
-			<script> stoper() ; </script>
+				<div id="c" >42</div>			
+			</div>
+				<script> stoper() ;setRandomvalue(); Literki(); </script>
+			 		<div id="inf">
+						<div id="text1">Kanał alarmowy</div>	
+						<div id="text4">Aby połączyć się z kanałem alarmowym należy ustawić odpowiedni kod.</div>	
+						<div id="text2">6 8 2 - jedna cyfra dobra we właściwym miejscu <br>
+							6 1 4 - jedna cyfra dobra w złym miejscu <br>
+							2 0 6 - dwie cyfry dobre, obie w złych miejscach <br>
+							7 3 8 - wszystkie cyfry złe <br>
+							7 8 0 - jedna dobra cyfra w złym miejscu</div>	
+							<div id="text3">PROSZĘ UŻYWAĆ TYLKO W SYTUACJACH AWARYJNYCH</div>
+					</div>	
+					<div id="p1"  class="podpowiedz" onclick="gethelpstage7_v1()"></div>
+					
 		</div>
 	</div>         
 </body>
