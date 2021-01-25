@@ -30,10 +30,17 @@ password[6] = stage7;
 password[7] = stage8;
 password[8] = "x";
 var z = "wc4712";
+var k = "1989";
+var i = "bomba w pociągu";
+var n = "pomocy bomba!";
 z = z.toString();
+k = k.toString();
+i = i.toString();
+n = n.toString();
 password[9] = z;
-
-
+password[2] = k;
+password[3] = i;
+password[5] = n;
 
 
 var counter = 0;
@@ -131,6 +138,24 @@ function stage3a_next() //stage3a
 		document.location.href = stage4;
 	}
 }
+
+/*function stage3_close()
+{
+	document.getElementById("game").style.backgroundImage = "url('img/laptoplog.jpg')";
+	document.getElementById('stage3_input').id="stage3a_input";
+	document.getElementById('button3_next').id="button3a_next";
+	document.getElementById('button3_next').addEventListener("click", stage3a_next);
+
+	//var removed_div1 = document.getElementById("buttonclose");
+	//removed_div1.remove();
+	
+	newD = document.createElement("button");
+	newD.classList.add("buttonfar");
+	newD.id = "p1";
+	//newD.innerHTML(<img src="img/lupa2-.png" width="170px" height="150px" />)
+	game.appendChild(newD);
+	newD.addEventListener("click", stage3a_far);
+}*/
 
 function stage3_close() //stage3
 {
@@ -724,7 +749,341 @@ function movestageradio() {
 	btn.classList.add("buttonnext");
 	btn.addEventListener("click", stage7_next);
 }
+//--------------------------------------------------------------------------------------------------------
+function gethelpstage3_v1() {
 
+	setcaounterPodpowiedz();
+	var tekst = "Dlaczego Emily jest taka ważna dla A.?"
+	var removed_div = document.getElementById("p1");
+
+	var game = document.getElementById("game");
+
+	mystyle = document.createElement("div");
+	mystyle.classList.add("podpowiedz_box");
+	game.appendChild(mystyle);
+	mystyle.innerHTML = tekst;
+	mystyle.id = "podpowiedz_box"
+	removed_div.remove();
+	var err_btn = document.createElement("div");
+	err_btn.id = "closed"
+	err_btn.innerHTML = "x";
+	game.appendChild(err_btn);
+	err_btn.classList.add("err_btn3");
+	err_btn.addEventListener("click", podpowiedzclosestage3_v1);
+}
+function podpowiedzclosestage3_v1() {
+	game.appendChild(mystyle);
+	var removed_div1 = document.getElementById("podpowiedz_box");
+	var removed_div2 = document.getElementById("closed");
+	removed_div1.remove();
+	removed_div2.remove();
+
+	newD = document.createElement("div");
+	newD.classList.add("podpowiedz");
+	newD.id = "p1";
+	game.appendChild(newD);
+	newD.addEventListener("click", gethelpstage3_v2);
+
+}
+function gethelpstage3_v2() {
+
+	setcaounterPodpowiedz();
+	var tekst = "PIN to cztery cyfry. W notatniku jest jedna pozycja – zaznaczona dla A. jako najważniejsza."
+	var removed_div = document.getElementById("p1");
+
+	var game = document.getElementById("game");
+
+	mystyle = document.createElement("div");
+	mystyle.classList.add("podpowiedz_box");
+	game.appendChild(mystyle);
+	mystyle.innerHTML = tekst;
+	mystyle.id = "podpowiedz_box"
+	removed_div.remove();
+	var err_btn = document.createElement("div");
+	err_btn.id = "closed"
+	err_btn.innerHTML = "x";
+	game.appendChild(err_btn);
+	err_btn.classList.add("err_btn3");
+	err_btn.addEventListener("click", podpowiedzclosestage3_v2);
+}
+function podpowiedzclosestage3_v2() {
+	game.appendChild(mystyle);
+	var removed_div1 = document.getElementById("podpowiedz_box");
+	var removed_div2 = document.getElementById("closed");
+	removed_div1.remove();
+	removed_div2.remove();
+
+	newD = document.createElement("div");
+	newD.classList.add("podpowiedz");
+	newD.id = "p1";
+	game.appendChild(newD);
+	newD.addEventListener("click", gethelpstage3_v3);
+
+}
+function gethelpstage3_v3() {
+
+	setcaounterPodpowiedz();
+	var tekst = "W którym roku urodziła się Emily?"
+	var removed_div = document.getElementById("p1");
+
+	var game = document.getElementById("game");
+
+	mystyle = document.createElement("div");
+	mystyle.classList.add("podpowiedz_box");
+	game.appendChild(mystyle);
+	mystyle.innerHTML = tekst;
+	mystyle.id = "podpowiedz_box"
+	removed_div.remove();
+	var err_btn = document.createElement("div");
+	err_btn.id = "closed"
+	err_btn.innerHTML = "x";
+	game.appendChild(err_btn);
+	err_btn.classList.add("err_btn3");
+	err_btn.addEventListener("click", podpowiedzclosestage3_v3);
+}
+function podpowiedzclosestage3_v3() {
+	game.appendChild(mystyle);
+	var removed_div1 = document.getElementById("podpowiedz_box");
+	var removed_div2 = document.getElementById("closed");
+	removed_div1.remove();
+	removed_div2.remove();
+
+}
+
+function gethelpstage4_v1() {
+
+	setcaounterPodpowiedz();
+	var tekst = "Spróbuj odkodować zaszyfrowaną wiadomość."
+	var removed_div = document.getElementById("p1");
+
+	var game = document.getElementById("game");
+
+	mystyle = document.createElement("div");
+	mystyle.classList.add("podpowiedz_box");
+	game.appendChild(mystyle);
+	mystyle.innerHTML = tekst;
+	mystyle.id = "podpowiedz_box"
+	removed_div.remove();
+	var err_btn = document.createElement("div");
+	err_btn.id = "closed"
+	err_btn.innerHTML = "x";
+	game.appendChild(err_btn);
+	err_btn.classList.add("err_btn4");
+	err_btn.addEventListener("click", podpowiedzclosestage4_v1);
+}
+function podpowiedzclosestage4_v1() {
+	game.appendChild(mystyle);
+	var removed_div1 = document.getElementById("podpowiedz_box");
+	var removed_div2 = document.getElementById("closed");
+	removed_div1.remove();
+	removed_div2.remove();
+
+	newD = document.createElement("div");
+	newD.classList.add("podpowiedz");
+	newD.id = "p1";
+	game.appendChild(newD);
+	newD.addEventListener("click", gethelpstage4_v2);
+
+}
+function gethelpstage4_v2() {
+
+	setcaounterPodpowiedz();
+	var tekst = "“Malinowe buty” to szyfr, a litery o tych samych kolorach mają ze sobą jakieś powiązanie..."
+	var removed_div = document.getElementById("p1");
+
+	var game = document.getElementById("game");
+
+	mystyle = document.createElement("div");
+	mystyle.classList.add("podpowiedz_box");
+	game.appendChild(mystyle);
+	mystyle.innerHTML = tekst;
+	mystyle.id = "podpowiedz_box"
+	removed_div.remove();
+	var err_btn = document.createElement("div");
+	err_btn.id = "closed"
+	err_btn.innerHTML = "x";
+	game.appendChild(err_btn);
+	err_btn.classList.add("err_btn4");
+	err_btn.addEventListener("click", podpowiedzclosestage4_v2);
+}
+function podpowiedzclosestage4_v2() {
+	game.appendChild(mystyle);
+	var removed_div1 = document.getElementById("podpowiedz_box");
+	var removed_div2 = document.getElementById("closed");
+	removed_div1.remove();
+	removed_div2.remove();
+
+	newD = document.createElement("div");
+	newD.classList.add("podpowiedz");
+	newD.id = "p1";
+	game.appendChild(newD);
+	newD.addEventListener("click", gethelpstage4_v3);
+
+}
+function gethelpstage4_v3() {
+
+	setcaounterPodpowiedz();
+	var tekst = "Litery w tych samych kolorach w szyfrze odpowiadają sobie."
+	var removed_div = document.getElementById("p1");
+
+	var game = document.getElementById("game");
+
+	mystyle = document.createElement("div");
+	mystyle.classList.add("podpowiedz_box");
+	game.appendChild(mystyle);
+	mystyle.innerHTML = tekst;
+	mystyle.id = "podpowiedz_box"
+	removed_div.remove();
+	var err_btn = document.createElement("div");
+	err_btn.id = "closed"
+	err_btn.innerHTML = "x";
+	game.appendChild(err_btn);
+	err_btn.classList.add("err_btn4");
+	err_btn.addEventListener("click", podpowiedzclosestage4_v3);
+}
+function podpowiedzclosestage4_v3() {
+	game.appendChild(mystyle);
+	var removed_div1 = document.getElementById("podpowiedz_box");
+	var removed_div2 = document.getElementById("closed");
+	removed_div1.remove();
+	removed_div2.remove();
+
+	newD = document.createElement("div");
+	newD.classList.add("podpowiedz");
+	newD.id = "p1";
+	game.appendChild(newD);
+	newD.addEventListener("click", gethelpstage4_v4);
+
+}
+function gethelpstage4_v4() {
+
+	setcaounterPodpowiedz();
+	var tekst = "Jeżeli w wiadomości zakodowanej znajdzie się litera, która też jest w szyfrze, należy ją zamienić na drugą oznaczoną tym samym kolorem."
+	var removed_div = document.getElementById("p1");
+
+	var game = document.getElementById("game");
+
+	mystyle = document.createElement("div");
+	mystyle.classList.add("podpowiedz_box");
+	game.appendChild(mystyle);
+	mystyle.innerHTML = tekst;
+	mystyle.id = "podpowiedz_box"
+	removed_div.remove();
+	var err_btn = document.createElement("div");
+	err_btn.id = "closed"
+	err_btn.innerHTML = "x";
+	game.appendChild(err_btn);
+	err_btn.classList.add("err_btn4");
+	err_btn.addEventListener("click", podpowiedzclosestage4_v4);
+}
+function podpowiedzclosestage4_v4() {
+	game.appendChild(mystyle);
+	var removed_div1 = document.getElementById("podpowiedz_box");
+	var removed_div2 = document.getElementById("closed");
+	removed_div1.remove();
+	removed_div2.remove();
+
+	newD = document.createElement("div");
+	newD.classList.add("podpowiedz");
+	newD.id = "p1";
+	game.appendChild(newD);
+	newD.addEventListener("click", gethelpstage4_v5);
+
+}
+function gethelpstage4_v5() {
+
+	setcaounterPodpowiedz();
+	var tekst = "Na przykład: literę ‘b’ zamieniamy na ‘u’, a ‘u’ na ‘b’. Liter, które nie występują w szyfrze nie należy zmieniać."
+	var removed_div = document.getElementById("p1");
+
+	var game = document.getElementById("game");
+
+	mystyle = document.createElement("div");
+	mystyle.classList.add("podpowiedz_box");
+	game.appendChild(mystyle);
+	mystyle.innerHTML = tekst;
+	mystyle.id = "podpowiedz_box"
+	removed_div.remove();
+	var err_btn = document.createElement("div");
+	err_btn.id = "closed"
+	err_btn.innerHTML = "x";
+	game.appendChild(err_btn);
+	err_btn.classList.add("err_btn4");
+	err_btn.addEventListener("click", podpowiedzclosestage4_v5);
+}
+function podpowiedzclosestage4_v5() {
+	game.appendChild(mystyle);
+	var removed_div1 = document.getElementById("podpowiedz_box");
+	var removed_div2 = document.getElementById("closed");
+	removed_div1.remove();
+	removed_div2.remove();
+}
+
+function gethelpstage6_v1() {
+
+	setcaounterPodpowiedz();
+	var tekst = "Znasz system, dzięki któremu niewidomi mogą czytać?"
+	var removed_div = document.getElementById("p1");
+
+	var game = document.getElementById("game");
+
+	mystyle = document.createElement("div");
+	mystyle.classList.add("podpowiedz_box");
+	game.appendChild(mystyle);
+	mystyle.innerHTML = tekst;
+	mystyle.id = "podpowiedz_box"
+	removed_div.remove();
+	var err_btn = document.createElement("div");
+	err_btn.id = "closed"
+	err_btn.innerHTML = "x";
+	game.appendChild(err_btn);
+	err_btn.classList.add("err_btn5");
+	err_btn.addEventListener("click", podpowiedzclosestage6_v1);
+}
+function podpowiedzclosestage6_v1() {
+	game.appendChild(mystyle);
+	var removed_div1 = document.getElementById("podpowiedz_box");
+	var removed_div2 = document.getElementById("closed");
+	removed_div1.remove();
+	removed_div2.remove();
+
+	newD = document.createElement("div");
+	newD.classList.add("podpowiedz");
+	newD.id = "p1";
+	game.appendChild(newD);
+	newD.addEventListener("click", gethelpstage6_v2);
+
+}
+function gethelpstage6_v2() {
+
+	setcaounterPodpowiedz();
+	var tekst = "Skorzystaj z alfabetu Braille’a."
+	var removed_div = document.getElementById("p1");
+
+	var game = document.getElementById("game");
+
+	mystyle = document.createElement("div");
+	mystyle.classList.add("podpowiedz_box");
+	game.appendChild(mystyle);
+	mystyle.innerHTML = tekst;
+	mystyle.id = "podpowiedz_box"
+	removed_div.remove();
+	var err_btn = document.createElement("div");
+	err_btn.id = "closed"
+	err_btn.innerHTML = "x";
+	game.appendChild(err_btn);
+	err_btn.classList.add("err_btn5");
+	err_btn.addEventListener("click", podpowiedzclosestage6_v2);
+}
+function podpowiedzclosestage6_v2() {
+	game.appendChild(mystyle);
+	var removed_div1 = document.getElementById("podpowiedz_box");
+	var removed_div2 = document.getElementById("closed");
+	removed_div1.remove();
+	removed_div2.remove();
+}
+
+//----------------------------------------------------------------------------------------------------------
 function gethelpstage7_v1() {
 
 	setcaounterPodpowiedz();

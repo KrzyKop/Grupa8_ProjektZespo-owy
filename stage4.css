@@ -8,7 +8,7 @@ body
 }
 #game
 {
-  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/laptoplog2.jpg);  position: relative;
+  width: 1600px; height: 900px;  margin:auto; flex: auto;  background-image: url(img/laptop_mail.jpg);  position: relative;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -119,4 +119,55 @@ top: 620px;
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
+}
+
+.podpowiedz
+{
+
+  position: relative;
+ width: 150px;
+ height: 150px;
+  background-image: url(img/thumbnail.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 1650;
+  top: 600px;
+  
+}
+
+.podpowiedz_box
+{
+
+  position: relative;
+  width: 1600px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 150;
+  top: 680px;
+  
+  font-family: Special Elite;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: center;
+  line-height: 50px;
+ 
+}
+
+.err_btn4
+{
+position: absolute;
+width: 21px;
+height: 21px;
+left: 1720px;
+top: 791px;
+border-radius: 90%;
+border: 2px solid #000000;
+font-size: 20px;
+padding: auto;
+text-align: center;
+font-family: Special Elite;
+font-style: normal;
 }
