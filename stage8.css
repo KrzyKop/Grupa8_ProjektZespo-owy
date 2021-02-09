@@ -38,7 +38,6 @@ color: #000000;
 
 .buttonnext
 { 
-  /* Rectangle 3 */
   font-family: Special Elite;
   font-style: normal;
   font-weight: normal;
@@ -52,7 +51,6 @@ color: #000000;
   padding-left: 35px;
   padding-top: 15px;
   background: #000000;
-  /* DALEJ */
   position: absolute;
   width: 301px;
   height: 72px;
@@ -63,7 +61,6 @@ color: #000000;
   font-weight: normal;
   font-size: 72px;
   line-height: 72px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   text-align: center;
@@ -92,7 +89,6 @@ color: #000000;
   text-align: center;
 }
 .ml1 {
-/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń */
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;

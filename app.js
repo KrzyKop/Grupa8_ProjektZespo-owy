@@ -22,10 +22,10 @@ var stage_end_pos = "stage_end_pos.html";
 var password = [10]
 
 password[1] = stage2;
-password[2] = "x"; //stage3
-password[3] = "x"; //stage4
+password[2] = "x";
+password[3] = "x";
 password[4] = stage5;
-password[5] = "x"; //stage6
+password[5] = "x";
 password[6] = stage7;
 password[7] = stage8;
 password[8] = "x";
@@ -85,14 +85,13 @@ function setplayer() {
 	else {
 		player = tmp;
 		window.localStorage.setItem('user', player);
-		//alert(window.localStorage.getItem('user'));
 		window.localStorage.clear();
 		createMytime();
 		startfun();
 	}
 }
-/*przejscia*/
-function backtomainpage() // niedkonczone
+
+function backtomainpage() 
 {
 	document.location.href = mainpage;
 }
@@ -101,12 +100,12 @@ function startfun() {
 	document.location.href = stage2;
 }
 
-function stage2_next() //stage2
+function stage2_next()
 {
 	document.location.href = stage3;
 }
 
-function stage3_next() //stage3
+function stage3_next()
 {
 	var nextto = false;
 	var password_from_users = document.getElementById("stage3_input").value;
@@ -122,7 +121,7 @@ function stage3_next() //stage3
 		document.location.href = stage4;
 	}
 }
-function stage3a_next() //stage3a
+function stage3a_next()
 {
 	var nextto = false;
 	var password_from_users = document.getElementById("stage3a_input").value;
@@ -139,37 +138,18 @@ function stage3a_next() //stage3a
 	}
 }
 
-/*function stage3_close()
-{
-	document.getElementById("game").style.backgroundImage = "url('img/laptoplog.jpg')";
-	document.getElementById('stage3_input').id="stage3a_input";
-	document.getElementById('button3_next').id="button3a_next";
-	document.getElementById('button3_next').addEventListener("click", stage3a_next);
-
-	//var removed_div1 = document.getElementById("buttonclose");
-	//removed_div1.remove();
-	
-	newD = document.createElement("button");
-	newD.classList.add("buttonfar");
-	newD.id = "p1";
-	//newD.innerHTML(<img src="img/lupa2-.png" width="170px" height="150px" />)
-	game.appendChild(newD);
-	newD.addEventListener("click", stage3a_far);
-}*/
-
-function stage3_close() //stage3
+function stage3_close() 
 {
 	document.location.href = stage3a;
 }
 
-function stage3a_far() //stage3a
+function stage3a_far() 
 {
 	document.location.href = stage3;
 }
 
-function stage4_next() //stage4
+function stage4_next() 
 {
-	//window.localStorage.clear();
 	var nextto = false;
 	var password_from_users = document.getElementById("stage4_input").value;
 	password_from_users = password_from_users.toLowerCase()
@@ -185,11 +165,11 @@ function stage4_next() //stage4
 	}
 }
 
-function stage5_next() //stage5
+function stage5_next()
 {
 	document.location.href = stage6;
 }
-function stage6_next() //stage6
+function stage6_next()
 {
 	var nextto = false;
 	var password_from_users = document.getElementById("stage6_input").value;
@@ -205,11 +185,11 @@ function stage6_next() //stage6
 		document.location.href = stage7;
 	}
 }
-function stage7_next() //stage7
+function stage7_next()
 {
 	document.location.href = stage8;
 }
-function stage8_next() //stage8
+function stage8_next()
 {
 	document.location.href = stage9;
 }
@@ -268,31 +248,27 @@ function checkkey() {
 			console.log('gora was pressed');
 			keyCode_users[counter_stage8] = 38;
 			setcounterstage8();
-			//return 38;
 		}
 		else if (event.keyCode == 39) {
 			console.log('prawo was pressed');
 			keyCode_users[counter_stage8] = 39
 			setcounterstage8();
-			//	return 39
 		}
 		else if (event.keyCode == 40) {
 			keyCode_users[counter_stage8] = 40
 			setcounterstage8();
 			console.log('dol was pressed');
-			//	return 40;
 		}
 	});
 }
 
-function move_stage_train() //stage8
+function move_stage_train() 
 {
 
 	var game = document.getElementById("game");
 
 	mystyle = document.createElement("div");
 	mystyle.classList.add("mystyle");
-	// mystyle.addEventListener("onload", Literki);
 	game.appendChild(mystyle);
 
 	mv = document.createElement("div");
@@ -316,14 +292,6 @@ function move_stage_train() //stage8
 	lett.innerHTML += "Zespół saperski: MAMY ŻĄDANIE SZANTAŻYSTÓW! BOMBA JUŻ TYKA! MUSISZ JĄ NATYCHMIAST ZNALEŹĆ I ROZBROIĆ... ";
 	Literki();
 
-	/*
-	  newDiv = document.createElement("div");
-	  lett.innerHTML ="Zespół saperski:  Udało Ci się wyjechałeś poza miasto, za chwile ktoś od nas wskoczy do pociągu. Musisz znaleźć bombę w tym czasie czasie. Poszukiwania zacznij od łazienek - tam najczęściej podkładane są ładunki wybuchowe.";
-	  lett.innerHTML +="Zespół saperski: MAMY ŻĄDANIE SZANTAŻYSTÓW! BOMBA JUŻ TYKA! MUSISZ JĄ NATYCHMIAST ZNALEŹĆ I ROZBROIĆ... ";
-	  newDiv.classList.add("mystyle");
-	  my_div = document.getElementById("org_div1");
-	  document.body.insertBefore(newDiv, my_div);
-	  */
 	var btn = document.createElement("button");
 	btn.innerHTML = "DALEJ!";
 	document.body.appendChild(btn);
@@ -352,7 +320,6 @@ function stage9_next() {
 function stage10_next() {
 	document.location.href = stage10;
 }
-/*stage10*/
 function question_final_V1() {
 	final = document.createElement("div");
 	final.id = "final"
@@ -375,10 +342,10 @@ function question_final_V1() {
 	my_div3 = document.getElementById("final_yes");
 	document.body.insertBefore(btn2, my_div3)
 
-	btn1.addEventListener("click", question_final_close_no);	 //no 
-	btn2.addEventListener("click", question_finalv1_close);	 //yes
+	btn1.addEventListener("click", question_final_close_no);
+	btn2.addEventListener("click", question_finalv1_close);
 }
-function question_final_V2() //stage 10 - negatywne rozbrojenie bomby okienko
+function question_final_V2() 
 {
 	final = document.createElement("div");
 	final.id = "final"
@@ -404,7 +371,7 @@ function question_final_V2() //stage 10 - negatywne rozbrojenie bomby okienko
 	btn1.addEventListener("click", question_final_close_no);
 	btn2.addEventListener("click", question_finalv2_close);
 }
-function question_final_close_no() //zamkniecie okienka 
+function question_final_close_no()
 {
 	var removed_div = document.getElementById("final");
 	var removed_btn1 = document.getElementById("final_yes");
@@ -413,7 +380,7 @@ function question_final_close_no() //zamkniecie okienka
 	removed_btn1.remove();
 	removed_btn2.remove();
 }
-function question_finalv2_close() //negatywne rozbrojenie - stage 10  failed
+function question_finalv2_close()
 {
 	var removed_div = document.getElementById("final");
 	var removed_btn1 = document.getElementById("final_yes");
@@ -424,7 +391,7 @@ function question_finalv2_close() //negatywne rozbrojenie - stage 10  failed
 	removed_btn2.remove();
 	failed();
 }
-function question_finalv1_close() //negatywne rozbrojenie - stage 10  positive
+function question_finalv1_close()
 {
 	var removed_div = document.getElementById("final");
 	var removed_btn1 = document.getElementById("final_yes");
@@ -440,24 +407,6 @@ function failed() { document.location.href = stage_end_fail }
 function positive() { document.location.href = stage_end_pos; }
 
 
-
-/*function move_stage_transition()
-{
-  newDiv = document.createElement("div");
-  newDiv.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. <br> Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń "
-  newDiv.classList.add("rectanglestyle");
-  my_div = document.getElementById("org_div1");
-  document.body.insertBefore(newDiv, my_div);
-  var btn = document.createElement("button");
-  btn.innerHTML = "Dalej!";
-  document.body.appendChild(btn);
-  btn.classList.add("buttonnext");
-  
-  //btn.onclick.add = searching_bomb();
-  btn.addEventListener("click", searching_bomb);	
-}*/
-
-/* Mechanizm liczenia bledow */
 function addcounter() {
 	counter++
 	checkcounter()
@@ -480,7 +429,6 @@ function checkPassword() {
 	}
 	else { console.log("error") }
 }
-/*stage2*/
 
 function Literki() {
 
@@ -505,7 +453,6 @@ function Literki() {
 		})
 
 }
-/*stage 9*/
 function changeimageone() {
 	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon1.jpeg')";
 }
@@ -522,10 +469,9 @@ function changeimagefive() {
 	document.getElementById("game").style.backgroundImage = "url('img/schemat_pociagu_wagon5.jpeg')";
 }
 
-/* minutnik i stoper*/
 
 function createMytime() {
-	var TimeStartGame = Date.now(); ///czas w mili sekundach
+	var TimeStartGame = Date.now(); 
 	window.localStorage.setItem('MyTime', TimeStartGame);
 	console.log("utworzono zmienna localstorage o wartosci:  " + TimeStartGame)
 }
@@ -559,7 +505,6 @@ function wypiszTime() {
 		display.textContent = "Wynik: " + minutes + ":" + seconds;
 	}
 	function ShowPodpowiedzi(duration, display) {
-		//alert(counterPodpowiedzi);
 		counterPodpowiedzi = window.localStorage.getItem("podpowiedzicounter")
 		counterPodpowiedzi = counterPodpowiedzi == null ? "0" : counterPodpowiedzi;
 		display.textContent = "podpowiedzi: " + counterPodpowiedzi;
@@ -632,7 +577,6 @@ function stageBomb() {
 		startTimer2(5 * 60, display2);
 	};
 }
-/*stage7*/
 function padLeadingZeros(num, size) {
 	var s = num + "";
 	while (s.length < size) s = "0" + s;
@@ -708,7 +652,6 @@ function checkfreq() {
 
 function setcaounterPodpowiedz() {
 	var counter = window.localStorage.getItem('podpowiedzicounter');
-	//alert(counter);
 	counter++;
 	window.localStorage.setItem('podpowiedzicounter', counter);
 
@@ -719,7 +662,6 @@ function movestageradio() {
 
 	mystyle = document.createElement("div");
 	mystyle.classList.add("mystyle");
-	// mystyle.addEventListener("onload", Literki);
 	game.appendChild(mystyle);
 
 	mv = document.createElement("div");
@@ -749,7 +691,7 @@ function movestageradio() {
 	btn.classList.add("buttonnext");
 	btn.addEventListener("click", stage7_next);
 }
-//--------------------------------------------------------------------------------------------------------
+
 function gethelpstage3_v1() {
 
 	setcaounterPodpowiedz();
@@ -1083,7 +1025,7 @@ function podpowiedzclosestage6_v2() {
 	removed_div2.remove();
 }
 
-//----------------------------------------------------------------------------------------------------------
+
 function gethelpstage7_v1() {
 
 	setcaounterPodpowiedz();

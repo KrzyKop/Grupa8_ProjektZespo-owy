@@ -13,11 +13,11 @@ body
   background-size: 100% 100%;
 }
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
     color: silver;
   }
   
-  :-ms-input-placeholder { /* Internet Explorer */
+  :-ms-input-placeholder {
     color: silver;
   }
   
@@ -116,7 +116,6 @@ background: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
 .ml1 {
-/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa sit amet dui porttitor cursus at ut sapien. Pellentesque lorem erat, placerat a enim facilisis, euismod bibendum eros. Fusce sit amet tristique erat, sed mattis nibh. Suspendisse quis viverra neque, vel tristique augue. Vivamus varius pulvinar velit, nec tempor dolor egestas non. zażółć gęślą jaźń */
 font-family: Special Elite;
 font-style: normal;
 font-weight: normal;
